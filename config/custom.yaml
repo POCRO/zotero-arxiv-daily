@@ -1,7 +1,10 @@
 zotero:
   user_id: ${oc.env:ZOTERO_ID}
   api_key: ${oc.env:ZOTERO_KEY}
-  include_path: null # Or set a list of glob patterns, e.g. ["2026/survey/**","2026/reading-group/**"]
+  # Only compare new papers against this collection (and all its subcollections, via **) instead
+  # of the whole library -- the library has a lot of non-robotics papers mixed in, which was
+  # diluting the similarity ranking toward unrelated topics.
+  include_path: ["您深爱但过菜的robotics/**"]
 
 # Email is disabled: this deployment writes a markdown digest file to the repo instead
 # (see executor.digest_dir below) and the GitHub Action commits it back. No SMTP secrets needed.
@@ -23,7 +26,15 @@ source:
     # The actual "what matches my interest" ranking comes from comparing against your Zotero
     # library via the reranker, not from this list. Adjust to your field:
     # https://arxiv.org/category_taxonomy
-    category: ["cs.AI","cs.CV","cs.LG","cs.CL"]
+    #
+    # Focus: robotics (manipulators, humanoids, teleoperation, data collection, dexterous manipulation).
+    # cs.RO is the primary robotics category on arXiv -- most relevant papers are tagged there.
+    # cs.LG/cs.CV/cs.AI are kept because a lot of manipulation/imitation-learning work is
+    # cross-listed into them rather than filed as cs.RO primary.
+    category: ["cs.RO","cs.LG","cs.CV","cs.AI"]
+    # Also pull papers where one of the above categories is a secondary (cross-listed) tag,
+    # not just the primary one -- robotics papers are frequently cross-listed under cs.LG/cs.CV.
+    include_cross_list: true
 
 executor:
   debug: ${oc.env:DEBUG,null}
