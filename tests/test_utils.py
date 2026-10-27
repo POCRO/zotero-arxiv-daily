@@ -6,8 +6,39 @@ import io
 
 import pytest
 
-from zotero_arxiv_daily.utils import glob_match, send_email, extract_tex_code_from_tar, _bm25_pick
+from zotero_arxiv_daily.utils import glob_match, send_email, extract_tex_code_from_tar, _bm25_pick, write_digest_file
 from tests.canned_responses import make_stub_smtp
+
+
+# ---------------------------------------------------------------------------
+# write_digest_file
+# ---------------------------------------------------------------------------
+
+
+class TestWriteDigestFile:
+    def test_writes_dated_and_latest_files(self, tmp_path, monkeypatch):
+        monkeypatch.chdir(tmp_path)
+        path = write_digest_file("# Hello Digest\n", output_dir="digests")
+
+        from pathlib import Path
+        import datetime
+
+        today = datetime.datetime.now().strftime('%Y-%m-%d')
+        assert path == str(Path("digests") / f"{today}.md")
+        assert (tmp_path / "digests" / f"{today}.md").read_text() == "# Hello Digest\n"
+        assert (tmp_path / "digests" / "latest.md").read_text() == "# Hello Digest\n"
+
+    def test_creates_output_dir_if_missing(self, tmp_path, monkeypatch):
+        monkeypatch.chdir(tmp_path)
+        assert not (tmp_path / "digests").exists()
+        write_digest_file("content", output_dir="digests")
+        assert (tmp_path / "digests").is_dir()
+
+    def test_overwrites_latest_on_second_call(self, tmp_path, monkeypatch):
+        monkeypatch.chdir(tmp_path)
+        write_digest_file("first", output_dir="digests")
+        write_digest_file("second", output_dir="digests")
+        assert (tmp_path / "digests" / "latest.md").read_text() == "second"
 
 
 # ---------------------------------------------------------------------------

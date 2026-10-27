@@ -7,8 +7,8 @@ from .protocol import CorpusPaper
 import random
 from datetime import datetime
 from .reranker import get_reranker_cls
-from .construct_email import render_email
-from .utils import send_email
+from .construct_email import render_email, render_markdown
+from .utils import send_email, write_digest_file
 from openai import OpenAI
 from tqdm import tqdm
 
@@ -107,7 +107,8 @@ class Executor:
             all_papers.extend(papers)
         logger.info(f"Total {len(all_papers)} papers retrieved from all sources")
         reranked_papers = []
-        if len(all_papers) > 0:
+        has_new_papers = len(all_papers) > 0
+        if has_new_papers:
             logger.info("Reranking papers...")
             reranked_papers = self.reranker.rerank(all_papers, corpus)
             reranked_papers = reranked_papers[:self.config.executor.max_paper_num]
@@ -115,10 +116,20 @@ class Executor:
             for p in tqdm(reranked_papers):
                 p.generate_tldr(self.openai_client, self.config.llm)
                 p.generate_affiliations(self.openai_client, self.config.llm)
-        elif not self.config.executor.send_empty:
+
+        logger.info("Rendering digest...")
+        digest_dir = self.config.executor.get('digest_dir', 'digests')
+        digest_path = write_digest_file(render_markdown(reranked_papers), digest_dir)
+        logger.info(f"Digest written to {digest_path}")
+
+        if not has_new_papers and not self.config.executor.send_empty:
             logger.info("No new papers found. No email will be sent.")
             return
-        logger.info("Sending email...")
-        email_content = render_email(reranked_papers)
-        send_email(self.config, email_content)
-        logger.info("Email sent successfully")
+
+        if self.config.email.get('enabled', True):
+            logger.info("Sending email...")
+            email_content = render_email(reranked_papers)
+            send_email(self.config, email_content)
+            logger.info("Email sent successfully")
+        else:
+            logger.info("Email disabled (email.enabled=false). Skipping send_email.")

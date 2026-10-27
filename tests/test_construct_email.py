@@ -1,6 +1,6 @@
 """Tests for zotero_arxiv_daily.construct_email: render_email, get_stars, get_block_html."""
 
-from zotero_arxiv_daily.construct_email import render_email, get_stars, get_block_html, get_empty_html
+from zotero_arxiv_daily.construct_email import render_email, render_markdown, get_stars, get_block_html, get_empty_html
 from tests.canned_responses import make_sample_paper
 
 
@@ -76,3 +76,33 @@ def test_get_block_html_contains_all_fields():
 def test_get_empty_html():
     html = get_empty_html()
     assert "No Papers Today" in html
+
+
+def test_render_markdown_with_papers():
+    papers = [make_sample_paper(score=7.5, tldr="A great paper.", affiliations=["MIT"])]
+    md = render_markdown(papers)
+    assert "# Daily arXiv Digest" in md
+    assert "Sample Paper Title" in md
+    assert "A great paper." in md
+    assert "MIT" in md
+
+
+def test_render_markdown_empty_list():
+    md = render_markdown([])
+    assert "No new papers today" in md
+
+
+def test_render_markdown_author_truncation():
+    authors = [f"Author {i}" for i in range(10)]
+    paper = make_sample_paper(authors=authors, score=7.0, tldr="ok")
+    md = render_markdown([paper])
+    assert "Author 0" in md
+    assert "..." in md
+    assert "Author 9" in md
+    assert "Author 5" not in md
+
+
+def test_render_markdown_no_affiliations():
+    paper = make_sample_paper(affiliations=None, score=7.0, tldr="ok")
+    md = render_markdown([paper])
+    assert "Unknown Affiliation" in md

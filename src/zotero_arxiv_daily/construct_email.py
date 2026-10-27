@@ -1,5 +1,6 @@
 from .protocol import Paper
 import math
+from datetime import datetime
 
 
 framework = """
@@ -104,28 +105,71 @@ def get_stars(score:float):
         return '<div class="star-wrapper">'+full_star * full_star_num + half_star * half_star_num + '</div>'
 
 
+def _format_rate(score:float|None) -> str:
+    return round(score, 1) if score is not None else 'Unknown'
+
+
+def _format_authors(authors:list[str]) -> str:
+    author_list = [a for a in authors]
+    if len(author_list) <= 5:
+        return ', '.join(author_list)
+    return ', '.join(author_list[:3] + ['...'] + author_list[-2:])
+
+
+def _format_affiliations(affiliations:list[str]|None) -> str:
+    if affiliations is None:
+        return 'Unknown Affiliation'
+    shown = affiliations[:5]
+    text = ', '.join(shown)
+    if len(affiliations) > 5:
+        text += ', ...'
+    return text
+
+
 def render_email(papers:list[Paper]) -> str:
     parts = []
     if len(papers) == 0 :
         return framework.replace('__CONTENT__', get_empty_html())
-    
+
     for p in papers:
         #rate = get_stars(p.score)
-        rate = round(p.score, 1) if p.score is not None else 'Unknown'
-        author_list = [a for a in p.authors]
-        num_authors = len(author_list)
-        if num_authors <= 5:
-            authors = ', '.join(author_list)
-        else:
-            authors = ', '.join(author_list[:3] + ['...'] + author_list[-2:])
-        if p.affiliations is not None:
-            affiliations = p.affiliations[:5]
-            affiliations = ', '.join(affiliations)
-            if len(p.affiliations) > 5:
-                affiliations += ', ...'
-        else:
-            affiliations = 'Unknown Affiliation'
+        rate = _format_rate(p.score)
+        authors = _format_authors(p.authors)
+        affiliations = _format_affiliations(p.affiliations)
         parts.append(get_block_html(p.title, authors, rate, p.tldr, p.pdf_url, affiliations))
 
     content = '<br>' + '</br><br>'.join(parts) + '</br>'
     return framework.replace('__CONTENT__', content)
+
+
+def render_markdown(papers:list[Paper]) -> str:
+    """Render the daily digest as Markdown, for committing into the repo (no email needed).
+
+    Produces a file like ``# Daily arXiv Digest - 2026-10-27`` followed by one section per paper,
+    sorted by relevance (the order papers are given in). Mirrors render_email's content, in a
+    format that renders nicely in GitHub's file browser.
+    """
+    today = datetime.now().strftime('%Y-%m-%d')
+    lines = [f"# Daily arXiv Digest - {today}", ""]
+
+    if len(papers) == 0:
+        lines.append("_No new papers today. Take a rest!_")
+        return '\n'.join(lines) + '\n'
+
+    for i, p in enumerate(papers, start=1):
+        rate = _format_rate(p.score)
+        authors = _format_authors(p.authors)
+        affiliations = _format_affiliations(p.affiliations)
+        lines.append(f"## {i}. {p.title}")
+        lines.append("")
+        lines.append(f"- **Authors:** {authors}")
+        lines.append(f"- **Affiliations:** {affiliations}")
+        lines.append(f"- **Relevance:** {rate}")
+        lines.append(f"- **PDF:** [{p.pdf_url}]({p.pdf_url})")
+        lines.append("")
+        lines.append(f"**TLDR:** {p.tldr}")
+        lines.append("")
+        lines.append("---")
+        lines.append("")
+
+    return '\n'.join(lines) + '\n'

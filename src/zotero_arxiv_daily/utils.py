@@ -2,6 +2,7 @@ import tarfile
 import re
 import glob
 import math
+import os
 import smtplib
 from collections import Counter
 from email.header import Header
@@ -138,6 +139,23 @@ def extract_markdown_from_pdf(file_path:str) -> str:
 def glob_match(path:str, pattern:str) -> bool:
     re_pattern = glob.translate(pattern,recursive=True)
     return re.match(re_pattern, path) is not None
+
+def write_digest_file(content:str, output_dir:str = "digests") -> str:
+    """Write today's digest to ``{output_dir}/{YYYY-MM-DD}.md`` and refresh ``{output_dir}/latest.md``.
+
+    Used instead of (or in addition to) emailing, for the file/repo based workflow: a GitHub
+    Action can git-commit the resulting files so the digest history lives in the repo itself.
+    Returns the path of the dated file that was written.
+    """
+    os.makedirs(output_dir, exist_ok=True)
+    today = datetime.datetime.now().strftime('%Y-%m-%d')
+    dated_path = os.path.join(output_dir, f"{today}.md")
+    latest_path = os.path.join(output_dir, "latest.md")
+    with open(dated_path, 'w', encoding='utf-8') as f:
+        f.write(content)
+    with open(latest_path, 'w', encoding='utf-8') as f:
+        f.write(content)
+    return dated_path
 
 def send_email(config:DictConfig, html:str):
     sender = config.email.sender
