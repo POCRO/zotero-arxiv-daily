@@ -1,1102 +1,1102 @@
-# Daily arXiv Digest - 2026-10-28
+# Daily arXiv Digest - 2026-10-29
 
-## 1. Learning Force-Reactive Humanoid Loco-Manipulation
+## 1. Pushing Dexterity and Safety for In-Hand Object Pose Reaching That Works Remarkably Well
 
-- **Authors:** Sihang Li, Xiaofeng Guo, Jinkun Cao, ..., Guanya Shi, Haozhi Qi
-- **Affiliations:** New York University, Carnegie Mellon University, Amazon FAR (Frontier AI & Robotics), University of Chicago
-- **Relevance:** 5.2
-- **PDF:** [https://arxiv.org/pdf/2610.35862v1](https://arxiv.org/pdf/2610.35862v1)
+- **Authors:** Ian Chuang, Hiya Shah, Vamsi Chilamkur, Iman Soltani, Claire Tomlin
+- **Affiliations:** University of California, Berkeley, University of California, Davis
+- **Relevance:** 5.1
+- **PDF:** [https://arxiv.org/pdf/2610.37652v1](https://arxiv.org/pdf/2610.37652v1)
 
-**TLDR:** FLoRe通过力感知示范、力反应扩散策略与具备混合柔顺力跟踪的全身控制器，使人形机器人能够在保持平衡的同时协调运动与双手接触力，在三项接触密集任务中达到80%的成功率，显著优于仅位置控制的26.7%。
+**TLDR:** 本文提出一种无需人工示范、可从仿真零样本迁移到真实机器人手的灵巧控制方案，实现多种手腕姿态下连续的手内物体六维位姿目标操作，并以可调安全过滤器将掉落率降低75%，同时保持91.5%的目标成功率。
 
 ---
 
-## 2. Zero-HLM: Generalizable Humanoid Loco-Manipulation without Real Robot Data
+## 2. EgoThumb: A Vision-Driven Supernumerary Robotic Thumb for Autonomous Grasp and Holding Assistance
 
-- **Authors:** Dianyi Yang, Mengya Liu, Zhumei Wang, ..., Baoxiong Jia, Siyuan Huang
+- **Authors:** Jianyu Hou, Jiawei Fu, Weikang Wan, ..., Jiajun Li, Hao Su
+- **Affiliations:** Sudo AI GmbH, University of California San Diego
+- **Relevance:** 5.0
+- **PDF:** [https://arxiv.org/pdf/2610.37582v1](https://arxiv.org/pdf/2610.37582v1)
+
+**TLDR:** EgoThumb是一款将执行器置于前臂、通过掌侧相机和视觉模仿学习自主判断抓取时机的轻量开源超级机器人拇指，可帮助单手完成原本需要双手协作的抓取与持握任务，并能适应不同用户和环境。
+
+---
+
+## 3. Learning Multi-Phase Robot Loco-Manipulation via Phase-Conditioned Policy Optimization
+
+- **Authors:** Simone Manni, Annika Wollschl\"ager, Dario Bellicoso, ..., Simon Le Cleac'h, Jan Br\"udigam
+- **Affiliations:** Robotics and AI Institute, ETH Zurich
+- **Relevance:** 5.0
+- **PDF:** [https://arxiv.org/pdf/2610.36270v1](https://arxiv.org/pdf/2610.36270v1)
+
+**TLDR:** 本文提出阶段条件化 PPO，通过阶段专属价值评估、奖励门控与重置课程训练单一策略，使不同硬件机器人无需示范数据即可完成长时序、多阶段的移动操作任务。
+
+---
+
+## 4. CARD: Contact-Anchored Retargeting for Dexterous Manipulation
+
+- **Authors:** Cunxi Dai, Botao He, Francois R Hogan, ..., Guanya Shi, Akash Sharma
 - **Affiliations:** 
-- **Relevance:** 5.0
-- **PDF:** [https://arxiv.org/pdf/2610.35075v1](https://arxiv.org/pdf/2610.35075v1)
-
-**TLDR:** Zero-HLM通过手机实景重建与仿真动作自适应生成无需真实机器人数据的可扩展训练集，使人形机器人在三项运动操作任务中的零样本成功率达到66.7%，并显著提升对新配置的泛化能力。
-
----
-
-## 3. Learning Dexterous Manipulation: Hands, Simulators, Training, and Evaluation
-
-- **Authors:** Luai Abuelsamen
-- **Affiliations:** Independent Researcher
-- **Relevance:** 5.0
-- **PDF:** [https://arxiv.org/pdf/2610.33486v1](https://arxiv.org/pdf/2610.33486v1)
-
-**TLDR:** 本文综述了113种灵巧手操作学习方法，指出领域主要依赖GPU仿真中的强化学习并逐渐转向遥操作示范学习，同时揭示硬件与评测标准高度集中、结果难以比较，并提出更规范的评测协议。
-
----
-
-## 4. MOTIO: Agentic Skill Engineering for Reality-Grounded Humanoid Loco-Manipulation
-
-- **Authors:** SpatialtemporalAI
-- **Affiliations:** 
-- **Relevance:** 5.0
-- **PDF:** [https://arxiv.org/pdf/2610.33446v1](https://arxiv.org/pdf/2610.33446v1)
-
-**TLDR:** MOTIO提出一种基于智能体的技能工程系统，将人类动作视频、现实尺度3D资产和可复用机器人技能转化为经物理仿真与人工反馈迭代的可执行人形机器人全身移动操作程序，并在仿真及真实G1机器人上验证了多任务泛化能力。
-
----
-
-## 5. EXE: Egocentric Cross-Embodiment Pretraining via Factorized Latent Actions for VLA Models
-
-- **Authors:** Qingyuan Cai, Bo Zhang, Yongzhen Huang, Jianyu Chen
-- **Affiliations:** ROBOTERA, Beijing Normal University, Tsinghua University
 - **Relevance:** 4.9
-- **PDF:** [https://arxiv.org/pdf/2610.33685v1](https://arxiv.org/pdf/2610.33685v1)
+- **PDF:** [https://arxiv.org/pdf/2610.36539v1](https://arxiv.org/pdf/2610.36539v1)
 
-**TLDR:** EXE通过将人类第一视角视频中的动作分解为跨具身共享的位置意图与具身特定运动，并结合语言引导的跨域对齐学习离散潜在动作表示，从而提升VLA模型在不同机器人形态上的操作泛化能力。
-
----
-
-## 6. DEX-PHD: A Dexterous Portable Handheld Device for Multimodal Data Collection
-
-- **Authors:** Jooyoung Hong, Noboru Myers, Obin Kwon, Yixian Yang, Joohyung Kim
-- **Affiliations:** University of Illinois Urbana-Champaign
-- **Relevance:** 4.8
-- **PDF:** [https://arxiv.org/pdf/2610.35462v1](https://arxiv.org/pdf/2610.35462v1)
-
-**TLDR:** DEX-PHD是一种将便携式无线操作、连续多指关节控制与同步视觉—本体—指尖接触数据采集相结合的灵巧操作设备，并验证了其演示数据可在实体人形机器人上有效回放。
+**TLDR:** CARD提出一种以接触为核心的人机灵巧操作重定向框架，将视频、动作捕捉和触觉手套演示统一转换为机器人运动学与接触力目标，并通过触觉跟踪控制器显著提升接触保持率和任务成功率。
 
 ---
 
-## 7. Scaling Dexterous Manipulation via Action Representation Pretraining
+## 5. RoboSTD: Zero-Shot Single-to-Dual Transfer via Sagittal Mirroring for Bimanual Learning
 
-- **Authors:** Yanjinghao Xu, Jiexin Zhang, Huan Zhao, ..., Xiang Bai, Han Ding
+- **Authors:** Hongyu Wu, Chong Liu, Shaoxuan Xie, ..., Shihan Wu, Guocai Yao
+- **Affiliations:** Beijing University of Posts and Telecommunications, Beijing Academy of Artificial Intelligence
+- **Relevance:** 4.9
+- **PDF:** [https://arxiv.org/pdf/2610.36685v1](https://arxiv.org/pdf/2610.36685v1)
+
+**TLDR:** RoboSTD通过矢状面镜像和大语言模型生成的时空协调约束，将无需额外双臂示范的单臂数据零样本转化为可执行的双臂监督，使仿真与真实任务中的双臂学习性能显著提升（集杯数量达到单臂基线的2.11倍）。
+
+---
+
+## 6. A fully articulated humanoid dexterous hand with human-level joint structure enabled by linkage-based actuation
+
+- **Authors:** Jihao Li, Jianguo Wang, Haotian Guo, ..., Guodong Lu, Huixu Dong
+- **Affiliations:** Zhejiang University, Robotics Institute of Zhejiang University
+- **Relevance:** 4.9
+- **PDF:** [https://arxiv.org/pdf/2610.36789v1](https://arxiv.org/pdf/2610.36789v1)
+
+**TLDR:** Torch-Hand以全连杆驱动实现21自由度类人手部结构，在兼顾灵巧运动、精确控制与高负载能力的同时，支持拇指对掌及复杂操作。
+
+---
+
+## 7. OpenJaws: An Open Hardware UMI Framework with Stereo Localization for Generalist Manipulation
+
+- **Authors:** Adithyavairavan Murali, Yash Oza, Karanbir Chahal, ..., Balakumar Sundaralingam, Stan Birchfield
 - **Affiliations:** 
 - **Relevance:** 4.8
-- **PDF:** [https://arxiv.org/pdf/2610.34453v1](https://arxiv.org/pdf/2610.34453v1)
+- **PDF:** [https://arxiv.org/pdf/2610.36598v1](https://arxiv.org/pdf/2610.36598v1)
 
-**TLDR:** ARPG先用大规模人类操作数据预训练并冻结动作表征，再以少量机器人示范学习任务条件动作生成，使灵巧双手操作成功率从10.1%提升至44.7%，并展现动作表征预训练这一新的扩展路径。
+**TLDR:** OpenJaws提出一种完全开源、低成本的立体视觉UMI框架，通过模块化3D打印夹爪、标准化接口和立体相机提升手持操作定位精度，并以新基准验证其优于单目方案且可支持跨机器人策略部署。
 
 ---
 
-## 8. HumanoidNDM: Closing the Training-Deployment Gap of Motion Tracking via Humanoid Neural Dynamics Model
+## 8. Kinematic Constraint-Referenced Evaluation for Articulated Object Manipulation
 
-- **Authors:** Chao Chen, Zhenrong Wang, Jilong Wang, ..., Li Yi, He Wang
+- **Authors:** Baptiste Bonin, Caro Strickland, Audrey Durand
+- **Affiliations:** Université Laval, CIFAR AI Chair, Mila -- Quebec AI Institute
+- **Relevance:** 4.8
+- **PDF:** [https://arxiv.org/pdf/2610.37550v1](https://arxiv.org/pdf/2610.37550v1)
+
+**TLDR:** 论文提出约束参考策略（CRS），通过将末端执行器指令投影到物体关节轴上，同时量化关节运动进展与偏离约束的“浪费”，从而比二元成功率更细致、无需示范或学习评判器地识别机械操作中的错误手势。
+
+---
+
+## 9. ActiveAlign: Aligning Egocentric Manipulation via Active Perception
+
+- **Authors:** Ri-Zhao Qiu, Bowen Wen, Yifeng Jiang, ..., Stan Birchfield, Erwin Coumans
+- **Affiliations:** NVIDIA, UC San Diego
+- **Relevance:** 4.7
+- **PDF:** [https://arxiv.org/pdf/2610.36859v1](https://arxiv.org/pdf/2610.36859v1)
+
+**TLDR:** ActiveAlign通过挥手进行在线视觉标定、触摸获取触觉反馈，利用主动感知闭合Real2Sim2Real误差，实现毫米级精度的机器人精细操作。
+
+---
+
+## 10. SO-101 Bench: Accessible Spatial Manipulation
+
+- **Authors:** Truman Hickok
+- **Affiliations:** Independent
+- **Relevance:** 4.7
+- **PDF:** [https://arxiv.org/pdf/2610.36420v1](https://arxiv.org/pdf/2610.36420v1)
+
+**TLDR:** SO-101 Bench 提出一个基于真实机械臂数字孪生的语言条件空间操作仿真基准，验证其能准确复现真实机器人上的策略排名，并发现当前策略在空间放置、未见物体和旋转规划上仍较薄弱，而结合代码生成与学习型抓取的LLM代理可将成功率提升至83.2%。
+
+---
+
+## 11. ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning
+
+- **Authors:** Chaehyun Kim, Chi-Pin Huang, Jisoo Kim, ..., Seungryong Kim, Fu-En Yang
+- **Affiliations:** KAIST, NVIDIA
+- **Relevance:** 4.7
+- **PDF:** [https://arxiv.org/pdf/2610.37666v1](https://arxiv.org/pdf/2610.37666v1)
+
+**TLDR:** ThinkWorld提出以由离散运动Token构成的动力学链（CoD）连接动作与世界状态，并通过预测未来与真实观测的一致性强化学习，使人类无动作标注视频也能监督VLA模型，从而提升跨本体的人机技能迁移及对新任务和环境的泛化能力。
+
+---
+
+## 12. Tokens of Motion: Primitive Motion Learning for Human-Humanoid Skill Transfer
+
+- **Authors:** Hanwen Ren, Meng Zheng, Wenzhe Cui, ..., Terrence Chen, Ziyan Wu
+- **Affiliations:** United Imaging Intelligence, Purdue University
+- **Relevance:** 4.6
+- **PDF:** [https://arxiv.org/pdf/2610.37330v1](https://arxiv.org/pdf/2610.37330v1)
+
+**TLDR:** M-PACT 从人类手部轨迹中学习可复用的动作原语，并将其与机器人特定的动作解码分离，从而以少量机器人示范实现跨任务、跨数据集和跨具身的人类技能迁移。
+
+---
+
+## 13. Ego-CEVR: Learning Cross-Embodiment Visual Representations from Human Egocentric Videos
+
+- **Authors:** Keru Zhou, Zhirui Fang, Xinrun Xu, ..., Xiu Li, Maoqing Yao
+- **Affiliations:** Nanyang Technological University, The Chinese University of Hong Kong, Shenzhen, Harbin Institute of Technology, Tsinghua University, Maniformer, ...
+- **Relevance:** 4.6
+- **PDF:** [https://arxiv.org/pdf/2610.37509v1](https://arxiv.org/pdf/2610.37509v1)
+
+**TLDR:** Ego-CEVR通过未来视频预测从人类与机器人第一视角视频学习任务全局表征，再以机器人动作监督将腕部局部交互表征与之结合，从而提升操作能力并支持跨本体少样本迁移。
+
+---
+
+## 14. Whole-Body Humanoid Control via Stochastic Motion Tokenization
+
+- **Authors:** Michael Drolet, Oleg Arenz, Jan Peters
+- **Affiliations:** Technical University of Darmstadt, Robotics Institute Germany (RIG), German Research Center for AI (DFKI), hessian.AI
+- **Relevance:** 4.5
+- **PDF:** [https://arxiv.org/pdf/2610.36452v1](https://arxiv.org/pdf/2610.36452v1)
+
+**TLDR:** 该论文提出一种三阶段随机运动分词框架，将文本或行为指令生成的离散运动片段输入全身跟踪策略，使 Unitree G1 能灵活执行并衔接舞蹈、格斗和行走等长时序动作，且运动重建性能优于 FSQ 和 VQ-VAE。
+
+---
+
+## 15. Trace-WAM: Learning to Act via 3D Motion Prediction for World Action Models
+
+- **Authors:** Xu Hu, Changjie Wu, Linzhe Shi, ..., Qing Li, Zhaoxiang Zhang
+- **Affiliations:** Chinese Academy of Sciences (CASIA), The Hong Kong Polytechnic University, Tsinghua University, Amap, Alibaba Group, University of Science and Technology Beijing
+- **Relevance:** 4.5
+- **PDF:** [https://arxiv.org/pdf/2610.36840v1](https://arxiv.org/pdf/2610.36840v1)
+
+**TLDR:** Trace-WAM通过在世界动作模型中引入未来3D运动轨迹预测作为辅助监督，联合学习视频、运动与动作表示，从而在无需额外推理开销的情况下提升机器人操作的样本效率及分布内外泛化能力。
+
+---
+
+## 16. RoboAuto: Autonomous Robot Program Search through Multi-Level Physical Understanding
+
+- **Authors:** Buzhao Liu, Jianing Ye, Xiu Yuan, ..., Ning Zhang, Chongjie Zhang
+- **Affiliations:** Washington University in St. Louis
+- **Relevance:** 4.5
+- **PDF:** [https://arxiv.org/pdf/2610.36533v1](https://arxiv.org/pdf/2610.36533v1)
+
+**TLDR:** RoboAuto通过分层物理知识库、场景 grounding、多阶段验证与主动实验驱动机器人程序搜索，在多种仿真和真实机器人任务上显著提升了长时程操作成功率并实现跨环境与本体迁移。
+
+---
+
+## 17. When, Where, and What to Correct: Human-Guided Adaptive Residual Correction for Robot Policies
+
+- **Authors:** Anukriti Singh, Maxime Caniot, Pratap Tokekar, Firas Abi-Farraj
+- **Affiliations:** Enchanted Tools, University of Maryland, College Park
+- **Relevance:** 4.5
+- **PDF:** [https://arxiv.org/pdf/2610.37547v1](https://arxiv.org/pdf/2610.37547v1)
+
+**TLDR:** ARC利用稀疏人类纠正学习“何时”启动残差控制及“在哪些”低维动作子空间探索，再由任务奖励通过强化学习决定“采取何种”修正，在冻结基础策略的情况下将真实机器人精密操作成功率从33.3%提升至75.0%。
+
+---
+
+## 18. RynnWorld-Latent: A Cross-Embodiment World Model Conditioned on Universal Latent Actions
+
+- **Authors:** Haoyu Zhao, Yinzhou Tang, Zixuan Wang, ..., Deli Zhao, Zhongyu Li
+- **Affiliations:** CUHK, Hupan Lab, DAMO Academy, Alibaba Group, Hong Kong Embodied AI Lab
+- **Relevance:** 4.5
+- **PDF:** [https://arxiv.org/pdf/2610.36791v1](https://arxiv.org/pdf/2610.36791v1)
+
+**TLDR:** RynnWorld-Latent提出以统一的3D潜在动作作为跨人类、机器人和仿真平台的共享接口，训练可控视频世界模型并生成合成数据，从而提升多种机器人上的视频预测与策略成功率。
+
+---
+
+## 19. VLA-Stem: A Lightweight Safety Mechanism for Vision-Language-Action Models via Reinforcement Learning
+
+- **Authors:** Bojun Zou, Wenhao Yu, Jiaohao Li, ..., Yanyong Zhang, Jianmin Ji
+- **Affiliations:** University of Macau (UM), Peking University (PKU), University of Science and Technology of China (USTC)
+- **Relevance:** 4.5
+- **PDF:** [https://arxiv.org/pdf/2610.37378v1](https://arxiv.org/pdf/2610.37378v1)
+
+**TLDR:** VLA-Stem通过冻结VLA策略并引入基于强化学习的轻量级“脑干”安全模块，在保留任务意图的同时实时规避静态与动态障碍，使受限场景下无碰撞任务成功率由23.7%提升至52.8%。
+
+---
+
+## 20. Retrieve to Act: Motion Primitive Graph Retrieval for Robust VLA Execution
+
+- **Authors:** Pham Tri Quang, Bao-Ngoc Dao, Minh Duc Nguyen, ..., Duy M. H. Nguyen, Vien Anh Ngo
 - **Affiliations:** 
-- **Relevance:** 4.7
-- **PDF:** [https://arxiv.org/pdf/2610.34126v1](https://arxiv.org/pdf/2610.34126v1)
-
-**TLDR:** HumanoidNDM通过低频自适应参考扰动、无需动作捕捉的神经动力学模型和梯度反传策略微调，实现了人形机器人运动跟踪策略在真实环境中的高效在线适应并缩小训练—部署差距。
-
----
-
-## 9. AuRA: From Atoms to Bits through Autonomous Robot Interaction
-
-- **Authors:** Xinchen Yu, Yoonkyo Jung, Haoran Chen, ..., Hyunjin Kim, Furong Huang
-- **Affiliations:** University of Maryland, College Park, All Purpose AI
-- **Relevance:** 4.7
-- **PDF:** [https://arxiv.org/pdf/2610.34452v1](https://arxiv.org/pdf/2610.34452v1)
-
-**TLDR:** AuRA通过自主抓取、机器人状态运动测量和交互前几何/外观先验，实现无需人工操作与标注的变形物体数字孪生重建，并将人工劳动量降低88.5%、重建质量提升至优于人工采集基线。
-
----
-
-## 10. HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience
-
-- **Authors:** Yang Liu, Jiacheng Liu, Hengtao Li, ..., Lixin Yang, Donglin Wang
-- **Affiliations:** 
-- **Relevance:** 4.7
-- **PDF:** [https://arxiv.org/pdf/2610.34186v1](https://arxiv.org/pdf/2610.34186v1)
-
-**TLDR:** HuGe 利用 2000 多小时人类与机器人第一视角数据及分阶段训练和跨具身适配技术，构建通用人形机器人 VLA 模型，在仿真基准取得领先表现，并验证人类示范可提升真实机器人任务成功率。
-
----
-
-## 11. Context-Aware Generation and Modulation of Expressive Motion Behavior using Multimodal Foundation Models
-
-- **Authors:** Till Hielscher, Fabio Scaparro, Kai O. Arras
-- **Affiliations:** University of Stuttgart
-- **Relevance:** 4.7
-- **PDF:** [https://arxiv.org/pdf/2610.35615v1](https://arxiv.org/pdf/2610.35615v1)
-
-**TLDR:** 本文提出一种结合多模态基础模型与动态运动基元的方法，可依据文本、音频和视频生成并调节跨机器人形态的情境化全身表达动作，并通过知识蒸馏降低延迟，用户研究显示其动作比未调制或 API 级方案更贴合互动情境。
-
----
-
-## 12. RynnVLA-Latent: Scaling Robotic Manipulation Foundation Models with 3D-Grounded Latent Actions
-
-- **Authors:** Haoyu Zhao, Xingyue Zhao, Zhian Su, ..., Deli Zhao, Zhongyu Li
-- **Affiliations:** Hupan Lab, Alibaba Group, DAMO Academy, Alibaba Group, Hong Kong Embodied AI Lab, CUHK, ...
-- **Relevance:** 4.7
-- **PDF:** [https://arxiv.org/pdf/2610.34356v1](https://arxiv.org/pdf/2610.34356v1)
-
-**TLDR:** RynnVLA-Latent以3D几何约束从海量异构视频中学习无需机器人原生动作标注的潜在动作，并将其用于跨机器人策略预训练与适配，从而提升多种模拟和真实操作任务的表现。
-
----
-
-## 13. RoboDoctor: Training-Free Recursive Self-Improvement for Robot Policies
-
-- **Authors:** Heyang Yu, Haomin Li, Sihang Li, ..., Xiaoyu Tian, Yiming Li
-- **Affiliations:** New York University, Tsinghua University, Northwestern University
-- **Relevance:** 4.7
-- **PDF:** [https://arxiv.org/pdf/2610.35604v1](https://arxiv.org/pdf/2610.35604v1)
-
-**TLDR:** RoboDoctor提出一种无需训练、在模型权重固定时利用交互反馈与可复用经验，递归调整机器人控制分工、策略介入时机及实体操作方法的框架。
-
----
-
-## 14. RoboWorM: Evaluating Movement Realism, Consistency and Acceleration Affects in Embodied Video World Models
-
-- **Authors:** Doanh Le Thien, Viet-Thanh Nguyen, Pham Tri Quang, ..., Duy M. H. Nguyen, Ngo Anh Vien
-- **Affiliations:** 
-- **Relevance:** 4.6
-- **PDF:** [https://arxiv.org/pdf/2610.33807v1](https://arxiv.org/pdf/2610.33807v1)
-
-**TLDR:** RoboWorM提出了一个利用机器人运动学与多视角几何先验的无VLM评测基准及KIVA、RIGIS指标，用于揭示视频世界模型及其加速方法在运动真实性、时空一致性和部署效率之间的权衡，并实现最高2.3倍推理加速且质量损失极小。
-
----
-
-## 15. AdaDexTrack: Dynamic Modulation for Adaptive and Generalizable Dexterous Manipulation Tracking
-
-- **Authors:** Jianibieke Adalibieke, Qianwei Han, Xueyi Liu, Yuzhe Qin, Li Yi
-- **Affiliations:** Tsinghua University, UC San Diego, Shanghai Qi Zhi Institute
-- **Relevance:** 4.6
-- **PDF:** [https://arxiv.org/pdf/2610.33852v1](https://arxiv.org/pdf/2610.33852v1)
-
-**TLDR:** AdaDexTrack 在通用灵巧操作跟踪器中加入反馈调制器，在线调整动作参考、物体表示和位置目标，从而减少误差累积，并提升语言驱动手物操作在未见轨迹、未见物体及真实硬件上的鲁棒性与泛化能力。
-
----
-
-## 16. Robot-Aligned 3D Gaussian Splatting for Precise Reaching with Wrist-Camera VLA Policies
-
-- **Authors:** Zuoxu Wang, Xiao Liang
-- **Affiliations:** Texas A&M University
-- **Relevance:** 4.6
-- **PDF:** [https://arxiv.org/pdf/2610.35626v1](https://arxiv.org/pdf/2610.35626v1)
-
-**TLDR:** PrecisionReach-GS利用与机器人坐标对齐的3D高斯泼溅生成逼真的腕部相机视觉与平滑到达轨迹，并结合指令条件的到达验证器，在无需外部相机和大规模遥操作的情况下提升VLA策略的精确到达能力，在主板拆解任务中以少于10分钟人工采集、1500条合成轨迹实现80.0%的成功率。
-
----
-
-## 17. MDPO: Multi-constraint Dexterous Policy Optimization with Reinforcement Learning
-
-- **Authors:** Ao Zhou, Zongyou Yu, Ke Wu, ..., Alois Knoll, Guang Chen
-- **Affiliations:** Technical University of Munich, TARS Robotics, Shanghai Innovation Institute, Fudan University, Tongji University
-- **Relevance:** 4.6
-- **PDF:** [https://arxiv.org/pdf/2610.33480v1](https://arxiv.org/pdf/2610.33480v1)
-
-**TLDR:** MDPO通过将累计成本约束与逐状态安全约束结合，并采用针对性的策略投影，实现了在保持灵巧操作性能的同时更可靠地满足多重安全要求。
-
----
-
-## 18. Pretraining Knows What, Simulation Teaches How: Compositional Generalization in a Sim-Trained Robot Agent
-
-- **Authors:** Benjamin Pikus, Daniel Saunders, Mircea Mironenco, ..., Dejia Xu, Shyamal Buch
-- **Affiliations:** Luma AI
-- **Relevance:** 4.6
-- **PDF:** [https://arxiv.org/pdf/2610.35817v1](https://arxiv.org/pdf/2610.35817v1)
-
-**TLDR:** ZAP 通过预训练视觉语言模型提供语义推理、仅在仿真中学习运动控制，在无需真实机器人数据的情况下实现了高效、低成本且可迁移到新任务、物体、语言和机器人形态的真实机器人操作。
-
----
-
-## 19. Open-World Law-to-Action: Vision-Language Priors and Touch for Parts with Hidden Physics
-
-- **Authors:** Mohamed A. Mabrok
-- **Affiliations:** Qatar University
-- **Relevance:** 4.6
-- **PDF:** [https://arxiv.org/pdf/2610.33705v1](https://arxiv.org/pdf/2610.33705v1)
-
-**TLDR:** 该论文提出L2A框架，将视觉语言模型提供的物理先验与触觉在线贝叶斯系统辨识结合，使机器人在未知家庭环境中识别部件运动规律、隐藏锁定机制并自适应执行开门、拉抽屉等精细操作。
-
----
-
-## 20. ThinkLocoManip: A Whole-Body Control Agentic Harness for Legged Loco-Manipulation
-
-- **Authors:** Nuo Chen, Shizeng Zhang, Yujie Yang, ..., Xueyi Zhang, Jiangwei Zhong
-- **Affiliations:** Lab of Robotics Oriented Intelligence, Fudan University, China, S-lab, Nanyang Technological University, Singapore, Robotics Lab, Lenovo CTO Organization, China
 - **Relevance:** 4.5
-- **PDF:** [https://arxiv.org/pdf/2610.34370v1](https://arxiv.org/pdf/2610.34370v1)
+- **PDF:** [https://arxiv.org/pdf/2610.37215v1](https://arxiv.org/pdf/2610.37215v1)
 
-**TLDR:** ThinkLocoManip提出一种融合交错式推理—行动、感知/导航/操作/行走工具编排与关键帧错误恢复的四足机器人全身控制框架，使其能更可靠地完成长时序移动操作任务，并在真实实验中达到77%的成功率。
-
----
-
-## 21. EmbodiedLab: Benchmarking Embodied Agents That Act to Know
-
-- **Authors:** Hongcheng Gao, Zelin Zheng, Alex Zhou, ..., Sihang Wu, Xiao He
-- **Affiliations:** National University of Singapore, Tsinghua University, HexaFuture Inc., Peking University
-- **Relevance:** 4.5
-- **PDF:** [https://arxiv.org/pdf/2610.35385v1](https://arxiv.org/pdf/2610.35385v1)
-
-**TLDR:** EmbodiedLab提出一个包含30个跨学科物理实验的基准，要求具身智能体通过自主操作仪器、观察反馈并分析数据来“行动求知”，结果显示当前前沿模型成功率不足一半且主要受限于设备交互能力。
+**TLDR:** R2A通过图神经网络从训练示范构建的时空运动原语图中检索几何先验，并以门控机制校正冻结VLA策略的动作，从而无需微调即可显著提升其在视觉分布外扰动下的执行鲁棒性。
 
 ---
 
-## 22. Learning Functional Specialisation for Bimanual Robotic Control
+## 21. cuArms: GPU-Accelerated Conflict-Based Planning for Multi-Arm Manipulation
 
-- **Authors:** Jingwen Li, Levin Kuhlmann, Jason Friedman, Gideon Kowadlo
-- **Affiliations:** Tel Aviv University, Monash University, Cerenaut
-- **Relevance:** 4.5
-- **PDF:** [https://arxiv.org/pdf/2610.33947v1](https://arxiv.org/pdf/2610.33947v1)
-
-**TLDR:** 研究表明，在双臂角色稳定时，将差异化控制目标与固定且符合对侧控制的手—任务分配结合，能通过更强的功能特化显著提升机器人双臂控制的性能与能效，但会牺牲任务角色 बदल换时的灵活性。
-
----
-
-## 23. How High Can GPT-6 Astra Climb in Contact-Rich Manipulation? PhysLadder: A Hierarchical, Matched Sim-Real Benchmark for Physical Interaction
-
-- **Authors:** Haibao Yu, Jiaqi Meng, Zijian Zhang, ..., Ping Luo, Ding Zhao
-- **Affiliations:** Stanford University, University of Michigan, Ann Arbor, Tuojing Intelligence, Tsinghua University, Nanyang Technological University, ...
-- **Relevance:** 4.5
-- **PDF:** [https://arxiv.org/pdf/2610.34527v1](https://arxiv.org/pdf/2610.34527v1)
-
-**TLDR:** PhysLadder基准测试显示，GPT-6 Astra在接触丰富的物理操作中能力随任务复杂度显著下降（真实环境成功率由L1的80.0%降至L2的47.6%、L3的0%），且仿真与现实结果高度一致，主要瓶颈在空间推理、接触选择、力控制和协调操作。
-
----
-
-## 24. PS-DLO: Property- and Spatially Aware Deformable Linear Object Manipulation Policy
-
-- **Authors:** Mengdi Li, Boxian Yao, Xiyu Zhu, ..., Tao Liu, Zhibo Pang
-- **Affiliations:** Peking University, Space Engineering University, University of Chinese Academy of Sciences
-- **Relevance:** 4.5
-- **PDF:** [https://arxiv.org/pdf/2610.34147v1](https://arxiv.org/pdf/2610.34147v1)
-
-**TLDR:** PS-DLO 将图像推断的物体属性先验与 SAM3 提取的未来空间特征结合起来指导策略学习，使机器人能更稳健地完成多种柔性线状物体操作任务，并在九项真实任务中取得 68.9% 的平均成功率。
-
----
-
-## 25. ORBIT: A Modular Multi-finger Robotic Hand Platform with Rotational Finger Reconfiguration
-
-- **Authors:** Benito Ribadeneira, Siqi Shang, Lillian Chin
-- **Affiliations:** The University of Texas at Austin
-- **Relevance:** 4.5
-- **PDF:** [https://arxiv.org/pdf/2610.33241v1](https://arxiv.org/pdf/2610.33241v1)
-
-**TLDR:** ORBIT提出一种采用环形旋转指根机构的模块化多指机器人手，可在不到1秒内无拆卸重构手指布局，并支持不同形态的公平对比及灵巧操作任务。
-
----
-
-## 26. Tiny Recursive Policy: Recursive Latent Refinement for Visuomotor Control
-
-- **Authors:** Hakan Aktas, Cengiz Oztireli
-- **Affiliations:** 
+- **Authors:** Philip Huang, Fabio Ramos, Jiaoyang Li, Caelan Garrett, Lars Johannsmeier
+- **Affiliations:** NVIDIA, University of Sydney, Carnegie Mellon
 - **Relevance:** 4.4
-- **PDF:** [https://arxiv.org/pdf/2610.33288v1](https://arxiv.org/pdf/2610.33288v1)
+- **PDF:** [https://arxiv.org/pdf/2610.36250v1](https://arxiv.org/pdf/2610.36250v1)
 
-**TLDR:** TRP通过持久化时序状态与递归潜变量精炼提升视觉运动控制，凭借更少参数在长时程、上下文依赖及少样本任务中实现更强性能与鲁棒性。
+**TLDR:** cuArms 将基于冲突的多臂规划与 GPU 并行、可复用多模态路线图及高层调度结合，实现可扩展、领域无关的多机械臂任务—运动协同规划，并能实时生成初始解和持续优化轨迹与调度质量。
 
 ---
 
-## 27. I Won't Know Until I Try: Interactive Information Gathering for Long-Horizon Manipulation
+## 22. Which Hand Was Late? Diagnosis for Robot Failure Recovery in Bimanual Tool Use
 
-- **Authors:** Linfei Yuan, Rachel Holladay
-- **Affiliations:** University of Pennsylvania
+- **Authors:** Baptiste Bonin, Caro Strickland, Audrey Durand
+- **Affiliations:** Université Laval, CIFAR AI Chair, Mila -- Quebec AI Institute
 - **Relevance:** 4.4
-- **PDF:** [https://arxiv.org/pdf/2610.33959v1](https://arxiv.org/pdf/2610.33959v1)
+- **PDF:** [https://arxiv.org/pdf/2610.37533v1](https://arxiv.org/pdf/2610.37533v1)
 
-**TLDR:** 本文提出一种基于PDDLStream的交互式信息获取与恢复重规划框架，使机器人通过物理试探揭示未知属性，并在交互改变环境或结果不确定时仅重规划必要部分，从而可靠完成长时域操作任务。
-
----
-
-## 28. Learning Direct Control from Optimization for Dynamic Target Tracking
-
-- **Authors:** Bing Sun, Yue Lin, Canhui Wen, ..., Dong Wang, Huchuan Lu
-- **Affiliations:** 
-- **Relevance:** 4.3
-- **PDF:** [https://arxiv.org/pdf/2610.34929v1](https://arxiv.org/pdf/2610.34929v1)
-
-**TLDR:** LECO通过可微运动学将轨迹优化目标直接迁移到控制策略学习，并结合专家渐进引导与预测安全回退机制，实现了高效、平滑且鲁棒的动态目标跟踪。
+**TLDR:** 本文发现，在双臂工具操作中，工具滑脱可由持工具手感知、哪只手延迟需结合双臂信息判断，而多重故障可能无法仅凭被动传感器辨识，但通过失败后升级修复仍可达到知晓真实原因时的恢复效果，且VLM内部编码了延迟手信息却未必会按问题措辞将其报告出来。
 
 ---
 
-## 29. MMGNet: Multi-Modal 6-DoF Grasp Synthesis for Cluttered Scenes
+## 23. PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations
 
-- **Authors:** Rui Cao, Jia-Hui Pan, Yichuan Li, ..., Jiangliu Wang, Yun-Hui Liu
-- **Affiliations:** Shenzhen Technology University, The Chinese University of Hong Kong
-- **Relevance:** 4.3
-- **PDF:** [https://arxiv.org/pdf/2610.34893v1](https://arxiv.org/pdf/2610.34893v1)
+- **Authors:** Hanqing Wang, Zhaotian Cai, Ruichuan An, ..., Zenan Zhou, Youzheng Wu
+- **Affiliations:** JD.com, Peking University
+- **Relevance:** 4.4
+- **PDF:** [https://arxiv.org/pdf/2610.37381v1](https://arxiv.org/pdf/2610.37381v1)
 
-**TLDR:** MMGNet通过将多尺度RGB特征分层注入3D点云表示，并按候选抓取旋转组织局部特征，实现更鲁棒的杂乱场景6自由度抓取，在基准测试和真实机器人实验中均优于现有方法。
-
----
-
-## 30. Enhancing Deep Reinforcement Learning for Robotic Motion Planning via Task Decomposition
-
-- **Authors:** Yuanzhi He, Victor Romero-Cano, Jiayu Xu, Juan David Hern\'andez, Gualtiero Colombo
-- **Affiliations:** Cardiff University
-- **Relevance:** 4.3
-- **PDF:** [https://arxiv.org/pdf/2610.35494v1](https://arxiv.org/pdf/2610.35494v1)
-
-**TLDR:** 该论文提出一种结合仅迁移评论家网络首层参数与分阶段奖励重设计的任务分解框架，在避障机器人操作任务中显著提升DRL成功率并将收敛时间最多缩短70%。
+**TLDR:** PDRVLA通过轻量级物理动力学模块从视觉语言特征中提取未来外观、几何与运动信息，在无需在线生成视频的情况下提升VLA模型的机器人动作规划能力，并在四项仿真基准上取得优异性能。
 
 ---
 
-## 31. RobotAgentBench: Towards Open-world Robot Autonomy
+## 24. State estimation for a hybrid rigid-continuum space manipulator system
 
-- **Authors:** Lingjun Mao, Jinglin Cao, Lukun He, ..., Kun Zhou, Biwei Huang
-- **Affiliations:** Aether AI, University of California Davis, University of California San Diego
-- **Relevance:** 4.3
-- **PDF:** [https://arxiv.org/pdf/2610.34649v1](https://arxiv.org/pdf/2610.34649v1)
-
-**TLDR:** RobotAgentBench提出一个涵盖任务发现、情境推理、操作执行、失败恢复与鲁棒性的真实家庭开放世界机器人自主性评测基准，实验表明当前模型虽具备较强操控能力但自主性仍不足，而智能体架构与递归自我改进可显著提升表现。
-
----
-
-## 32. RoKON: Efficient and Adaptive Data-Enabled Predictive Control for Robotic Manipulation
-
-- **Authors:** Akshun Sharma, Zhongqi Wei, Buqing Ou, Frederike D\"umbgen
-- **Affiliations:** Carnegie Mellon University, University of Maryland
-- **Relevance:** 4.3
-- **PDF:** [https://arxiv.org/pdf/2610.35458v1](https://arxiv.org/pdf/2610.35458v1)
-
-**TLDR:** RoKON通过高斯核非线性预测器、阻尼高斯–牛顿实时优化和混合在线/离线数据缓冲，实现了无需显式动力学模型且能适应摩擦变化的高效机器人操作控制。
-
----
-
-## 33. X-World: Transferring Video Priors to Variable-View Robot Control
-
-- **Authors:** Chun Gu, Xiaofei Wei, Yiming Chen, Juntong Zhang, Li Zhang
-- **Affiliations:** 
-- **Relevance:** 4.2
-- **PDF:** [https://arxiv.org/pdf/2610.34105v1](https://arxiv.org/pdf/2610.34105v1)
-
-**TLDR:** X-World通过跨视角融合与共享动作专家，将视频生成先验迁移到可变视角机器人控制，在模拟与真实任务中取得高成功率，但对摄像机、背景和噪声变化仍较脆弱。
-
----
-
-## 34. Profiling a Frontier Agent with EBench: From Direct Control to Harness with Policy
-
-- **Authors:** Yifei Yao, Yude Zou, Guanbo Jiao, ..., Weinan Zhang, Chunhua Shen
-- **Affiliations:** Shanghai Artificial Intelligence Laboratory, Zhejiang University, Fudan University, Shanghai Jiao Tong University
-- **Relevance:** 4.2
-- **PDF:** [https://arxiv.org/pdf/2610.35832v1](https://arxiv.org/pdf/2610.35832v1)
-
-**TLDR:** 研究表明，GPT-6-Astra直接控制机器人在短时任务上有竞争力但在长时、高精度操作上逊色于专训策略，而通过智能体框架调用VLA/WAM策略可融合双方优势，以更低Token成本达到最强策略水平，但仍受策略调用、子目标规划和抓取保持问题限制。
-
----
-
-## 35. MimicAll: Structured Embodiment Conditioning for Cross-Humanoid Whole-Body Motion Tracking
-
-- **Authors:** Jia Li, Lingyun Xu, Yitang Li, Hao Zhao
-- **Affiliations:** Roboparty Lab, Huazhong University of Science and Technology, Tsinghua University, Peking University
-- **Relevance:** 4.2
-- **PDF:** [https://arxiv.org/pdf/2610.33508v1](https://arxiv.org/pdf/2610.33508v1)
-
-**TLDR:** MimicAll通过将机器人结构、形态与动力学信息编码为全局及关节对齐条件，训练一个可跨16个类人机器人家族、4096种身体变体共享的全身运动跟踪策略，并显著提升了对新身体的泛化与闭环跟踪成功率。
-
----
-
-## 36. Nonprehensile Robotic Catching Using Virtual Constraints
-
-- **Authors:** Aakash Khandelwal, Ranjan Mukherjee
-- **Affiliations:** Michigan State University
-- **Relevance:** 4.2
-- **PDF:** [https://arxiv.org/pdf/2610.35851v1](https://arxiv.org/pdf/2610.35851v1)
-
-**TLDR:** 论文提出一种基于虚拟非完整约束（VNHC）和模型预测控制（MPC）的非抓取式机器人接球方法，无需预测物体轨迹即可在期望高度以近零相对法向和切向速度完成接触，并将物体稳定控制到目标位置。
-
----
-
-## 37. RoboReason: Boosting Robotics-Relevant VLM Reasoning Through Scalable Data Generation
-
-- **Authors:** Sagnik Anupam, Utkarsh Lal, Aneesh Edara, ..., Dinesh Jayaraman, Osbert Bastani
-- **Affiliations:** University of Pennsylvania
-- **Relevance:** 4.2
-- **PDF:** [https://arxiv.org/pdf/2610.33778v1](https://arxiv.org/pdf/2610.33778v1)
-
-**TLDR:** RoboReason 从真实机器人操作轨迹中可规模化生成时空排序训练数据，并通过监督微调和强化学习显著提升 VLM 的机器人相关空间推理能力及部分下游任务表现。
-
----
-
-## 38. SceneAgent: An Agentic Pipeline from 3D and 4D Captures to Simulation Environments
-
-- **Authors:** Luke Hollis, Tianxing Fan, Heng Yang
-- **Affiliations:** Harvard University
-- **Relevance:** 4.2
-- **PDF:** [https://arxiv.org/pdf/2610.34745v1](https://arxiv.org/pdf/2610.34745v1)
-
-**TLDR:** SceneAgent 利用智能体协调整合3D/4D场景重建、物理建模与模拟器反馈修复，将视觉捕获转化为可交互的仿真环境，并显著提升静态重建和动态场景复现效果。
-
----
-
-## 39. Variational Cognitive Memory Abstraction for Long-Horizon Vision-Language-Action Models
-
-- **Authors:** Xinyu Liu, Daiying Tian, Chenwei Tang, ..., Liangli Zhen, Jiancheng Lv
-- **Affiliations:** Agency for Science, Technology and Research (A*STAR), Sichuan University
-- **Relevance:** 4.2
-- **PDF:** [https://arxiv.org/pdf/2610.34251v1](https://arxiv.org/pdf/2610.34251v1)
-
-**TLDR:** CogMemory通过变分压缩将长时程机器人交互历史抽象为紧凑记忆槽，并按需检索关键线索，使多种VLA模型以较小开销提升长程操作表现。
-
----
-
-## 40. RoboJev: An Open Vision-Language Judge for Robot Success Detection
-
-- **Authors:** Josef Liyanjun Chen
-- **Affiliations:** Independent Researcher
-- **Relevance:** 4.2
-- **PDF:** [https://arxiv.org/pdf/2610.33718v1](https://arxiv.org/pdf/2610.33718v1)
-
-**TLDR:** RoboJev-27B 是一个开源视觉语言模型，通过任务指令和多视角机器人操作视频预测任务是否成功，在同类机器人上达到95.2%平衡准确率并能泛化至未知机器人和实验室。
-
----
-
-## 41. Real-Time Human Trajectory Prediction from RGB-D for Mobile Robots Using Bi-Mamba
-
-- **Authors:** Basheer Al-Tawil, Magnus Jung, Ayoub Al-Hamadi
-- **Affiliations:** Otto von Guericke University
-- **Relevance:** 4.2
-- **PDF:** [https://arxiv.org/pdf/2610.33916v1](https://arxiv.org/pdf/2610.33916v1)
-
-**TLDR:** TrajMamba以训练与部署一致的RGB-D处理流程结合轻量级双向Mamba-GRU，实时预测行人短期轨迹，并在ETH/UCY基准及TIAGo机器人上验证了其精度与实用性。
-
----
-
-## 42. TurboWAM: Learning What Matters for Fast World Action Models
-
-- **Authors:** Guile Wu, Shuangzhi Li, Xingxin Chen, ..., Yingxue Zhang, Dongfeng Bai
-- **Affiliations:** Huawei, Huawei Noah's Ark Lab, University of Alberta
-- **Relevance:** 4.2
-- **PDF:** [https://arxiv.org/pdf/2610.33941v1](https://arxiv.org/pdf/2610.33941v1)
-
-**TLDR:** TurboWAM通过根据动作去噪状态自适应聚合不同世界模型层的表征、调节分层动作监督梯度并缓存可复用特征，在保持机器人任务成功率的同时显著降低世界动作模型的推理延迟。
-
----
-
-## 43. TRIAGE: Efficient Vision-Language-Action Inference Needs Both Reuse and Pruning
-
-- **Authors:** Sooyoung Kwon, Carlee Joe-Wong, Kyunghan Lee
-- **Affiliations:** Carnegie Mellon University, Seoul National University
-- **Relevance:** 4.1
-- **PDF:** [https://arxiv.org/pdf/2610.34519v1](https://arxiv.org/pdf/2610.34519v1)
-
-**TLDR:** TRIAGE依据视觉token的漂移程度和重要性，动态选择重算、复用或剪枝，在Jetson AGX Orin上将VLA预填充延迟最多降低48%，同时保持接近完整重算的成功率。
-
----
-
-## 44. Behavior Spatial Benchmark: Evaluating Spatial Understanding for Robotics
-
-- **Authors:** Sirui Chen, Huang Huang, Qineng Wang, ..., Li Fei-Fei, Jiajun Wu
-- **Affiliations:** 
-- **Relevance:** 4.1
-- **PDF:** [https://arxiv.org/pdf/2610.34051v1](https://arxiv.org/pdf/2610.34051v1)
-
-**TLDR:** 本文提出 BEHAVIOR-Spatial 基准，联合评测机器人空间问答、目标定位与动作执行，揭示现有模型在目标或指令变化时空间指令遵循能力显著不足，因此机器人评估应超越任务成败并直接检验空间理解能否转化为行为。
-
----
-
-## 45. MARC: Mechanism-Aware Reflective Correction for Articulated Object Code Generation
-
-- **Authors:** Xiong Yang, Junkun Hao, Zijian Xiao, ..., Yuchen Xie, Ran Yi
-- **Affiliations:** Meituan, Shanghai Jiao Tong University
-- **Relevance:** 4.1
-- **PDF:** [https://arxiv.org/pdf/2610.33060v1](https://arxiv.org/pdf/2610.33060v1)
-
-**TLDR:** MARC 以共享的可执行运动学图连接机构构建、运动求解与诊断式修正，使生成的铰接物体能可靠执行目标运动，并在测试中显著提升成功率。
-
----
-
-## 46. HA-DiPO: Diffusion Policy Optimization for Heterogeneous Cooperative Transport
-
-- **Authors:** Xuebin Li, Jinpeng Xiao, Zong Chen, ..., Jiebao Sun, Yiqun Li
-- **Affiliations:** Huazhong University of Science and Technology, Harbin Institute of Technology, University of Naples Federico II
-- **Relevance:** 4.1
-- **PDF:** [https://arxiv.org/pdf/2610.33584v1](https://arxiv.org/pdf/2610.33584v1)
-
-**TLDR:** HA-DiPO提出一种基于扩散策略的分层多智能体强化学习框架，使异构机器人仅凭本地观测、无需通信即可协同搬运非固定载荷，并在仿真和真实实验中优于现有方法。
-
----
-
-## 47. TrySee: Modular Perception-Enhanced VLM Grounding for Closed-Loop Robot Task Planning in Specialized Domains
-
-- **Authors:** Elias Hofele, Thomas Trapp, David Timmermann, ..., Georg Heppner, Arne Roennau
-- **Affiliations:** FZI Research Center for Information Technology, Karlsruhe Institute of Technology (KIT)
-- **Relevance:** 4.1
-- **PDF:** [https://arxiv.org/pdf/2610.35687v1](https://arxiv.org/pdf/2610.35687v1)
-
-**TLDR:** TrySee提出一种无需VLM微调或端到端示范、通过可替换的领域感知模块与动态视觉预处理增强VLM在线视觉落地能力的闭环机器人任务规划框架，并在五类专业场景及真实电子废弃物拆解任务中验证了其有效性与实用性。
-
----
-
-## 48. Nonlinear Control of Aerial Manipulator
-
-- **Authors:** Sandesh Thapa
-- **Affiliations:** Oklahoma State University
-- **Relevance:** 4.0
-- **PDF:** [https://arxiv.org/pdf/2610.34454v1](https://arxiv.org/pdf/2610.34454v1)
-
-**TLDR:** 本文建立了四旋翼—二自由度机械臂的完整耦合动力学模型，并比较笛卡尔阻抗控制与自适应滑模控制在受扰悬停任务中的表现，结果表明两者均能实现稳定控制，但滑模控制对模型不确定性和外部扰动更具鲁棒性。
-
----
-
-## 49. Labference: Benchmarking the Reasoning-Action Connection in Robotic Laboratories
-
-- **Authors:** Shitong Liu, Jingwei Zhang, Sheng Lian, ..., Chaoyang Zhao, Zhiyong Liu
-- **Affiliations:** 
-- **Relevance:** 4.0
-- **PDF:** [https://arxiv.org/pdf/2610.35252v1](https://arxiv.org/pdf/2610.35252v1)
-
-**TLDR:** Labference提出一个通过控制实验结果变化并分别评估状态依赖决策、物理执行和任务完成度的机器人实验室基准，揭示现有系统在正确选择目标与可靠、高效执行之间仍存在明显脱节。
-
----
-
-## 50. RoboLongR: Causally Consistent Rewards Teach Robots to Progressively Master Long-Horizon Manipulation
-
-- **Authors:** Zixuan Chen, Lin Cao, Fenggang Zhang, ..., Jing Huo, Yang Gao
-- **Affiliations:** Southeast University, Fudan University, Nanjing University
-- **Relevance:** 4.0
-- **PDF:** [https://arxiv.org/pdf/2610.33863v1](https://arxiv.org/pdf/2610.33863v1)
-
-**TLDR:** RoboLongR 通过结合阶段顺序监督、历史记忆与失败反馈，学习符合任务前置条件的进度奖励，从而引导机器人逐步适应并完成长程操作任务。
-
----
-
-## 51. Reward-Guided RRT* for Budgeted Task and Motion Planning
-
-- **Authors:** Vin\'icius Ara\'ujo de Oliveira, Gabriel Ferreira Mendes Louren\c{c}o, Paulo L. J. Drews-Jr, Armando Alves Neto, Douglas G. Macharet
-- **Affiliations:** Universidade Federal do Rio Grande - FURG, Universidade Federal de Minas Gerais
-- **Relevance:** 4.0
-- **PDF:** [https://arxiv.org/pdf/2610.35289v1](https://arxiv.org/pdf/2610.35289v1)
-
-**TLDR:** 该方法通过奖励引导的 RRT* 在连续空间中联合选择任务并规划运动，并以返程可行性检查确保任务路线满足预算，在采样状态更少的同时取得与基线相当的效果。
-
----
-
-## 52. ElevateHead: Decide Once, Then Commit: When the Action Head Matters for Multimodal Imitation
-
-- **Authors:** Tsung-Lung Yang
-- **Affiliations:** National University
-- **Relevance:** 4.0
-- **PDF:** [https://arxiv.org/pdf/2610.34031v1](https://arxiv.org/pdf/2610.34031v1)
-
-**TLDR:** ElevateHead 在示范存在多种可行做法时，于学习到的决策点一次选定模式并坚持执行、也允许用户指定选择；它在未见过的 Franka Kitchen 任务上优于 BeT，但收益并未在所有任务中复现。
-
----
-
-## 53. POD-RoPE: Rotary Position Encoding over Physical Observation Distributions for Embodied AI
-
-- **Authors:** Xiaodi Huang, Zilin Wang, Jinpeng Liu, ..., Zhang Zhang, Shuxiang Lu
-- **Affiliations:** Institute of Automation, Chinese Academy of Sciences, National University of Singapore, Sharpa, University of Chinese Academy of Sciences
-- **Relevance:** 4.0
-- **PDF:** [https://arxiv.org/pdf/2610.33745v1](https://arxiv.org/pdf/2610.33745v1)
-
-**TLDR:** POD-RoPE 将视觉 token 表示为包含相机位置、视线方向与采样时间的物理观测分布，并以此统一引导注意力匹配与内容聚合，在提升机器人操作表现的同时保持较高计算效率。
-
----
-
-## 54. Environment Edits as a Corrective Signal for Reward Learning
-
-- **Authors:** Isaac Ngui, Courtney McBeth, Nancy M. Amato
-- **Affiliations:** University of Illinois Urbana-Champaign
-- **Relevance:** 4.0
-- **PDF:** [https://arxiv.org/pdf/2610.35659v1](https://arxiv.org/pdf/2610.35659v1)
-
-**TLDR:** 本文提出FERRET，通过在机器人运动保持不变时让人类编辑环境来学习物体属性与关系偏好，从而消除机器人纠正的特征歧义，并补足仅靠机器人纠正无法表达的奖励信息。
-
----
-
-## 55. Multimodal Socially Aware Framework for Human-Robot Interaction in Virtual Reality
-
-- **Authors:** Richard Xu, Dakarai Crowder, Alexis E. Block, Wenzhen Yuan
-- **Affiliations:** Case Western Reserve University, University of Illinois at Urbana-Champaign
-- **Relevance:** 4.0
-- **PDF:** [https://arxiv.org/pdf/2610.34534v1](https://arxiv.org/pdf/2610.34534v1)
-
-**TLDR:** 该论文提出一个融合语音、视觉和触觉、由视觉语言模型驱动的虚拟现实人机交互框架，实验表明其自主机器人具备基本的自然性与社交适切性，但在对话时序、歧义澄清和空间协调方面仍明显逊于人类遥操作系统。
-
----
-
-## 56. Differentiable Contact Dynamics for Legged Locomotion: Policy Learning and Contact-Implicit Trajectory Optimization
-
-- **Authors:** Gijeong Kim, Seungbin Oh, Dongyun Kang, Hae-Won Park
-- **Affiliations:** Korea Advanced Institute of Science and Technology
-- **Relevance:** 4.0
-- **PDF:** [https://arxiv.org/pdf/2610.35852v1](https://arxiv.org/pdf/2610.35852v1)
-
-**TLDR:** 该论文提出一种仅在反向传播中对完整摩擦接触条件进行中心路径松弛的可微接触梯度，在保持硬接触前向仿真可行性的同时平滑跨越接触模式转换，从而高效学习可直接迁移到真实四足机器人、且能生成更优接触丰富轨迹的运动策略。
-
----
-
-## 57. Quantum Closed Loop Inverse Kinematics Through Hilbert-Space Encoding of Robot Kinematics
-
-- **Authors:** Andrea Morghen, Pierluigi Arpenti, Roberto Schiattarella, Giovanni Acampora, Bruno Siciliano
-- **Affiliations:** University of Naples Federico II
-- **Relevance:** 4.0
-- **PDF:** [https://arxiv.org/pdf/2610.33715v1](https://arxiv.org/pdf/2610.33715v1)
-
-**TLDR:** 本文利用布洛赫球与泡利算符构建保留机器人几何结构及关节变量的量子运动学表示，并通过参数移位从量子测量恢复雅可比矩阵，进而提出结合量子位姿与雅可比信息的混合闭环逆运动学方法。
-
----
-
-## 58. JevVLA: Jev-Inspired Energy-Based Adaptation for Vision-Language-Action Policies
-
-- **Authors:** Wei Wang, Wenqiao Zhang, Zheqi Lv, ..., Chao Li, Yueting Zhuang
-- **Affiliations:** Universal Ubiquitous AI Co., Ltd., National University of Singapore, Zhejiang University, Hangzhou DEEP Robotics Technology Co., Ltd., Cornell University
-- **Relevance:** 4.0
-- **PDF:** [https://arxiv.org/pdf/2610.35010v1](https://arxiv.org/pdf/2610.35010v1)
-
-**TLDR:** JevVLA通过为冻结的视觉-语言-动作策略学习一个轻量级条件能量函数，用其能量值筛选离散动作、用其梯度修正连续动作，从而以约8万参数在五个机器人操作基准上稳定提升任务成功率。
-
----
-
-## 59. VISTA: Active Exploration for Self-Improvement in Embodied Agents
-
-- **Authors:** Zhang Zhang, Shengjun Zhang, Simin Huang, ..., Xin Fei, Yueqi Duan
-- **Affiliations:** National University of Singapore, Tsinghua University
-- **Relevance:** 4.0
-- **PDF:** [https://arxiv.org/pdf/2610.35051v1](https://arxiv.org/pdf/2610.35051v1)
-
-**TLDR:** VISTA让具身智能体主动在环境中探索、检验失败并迭代改进可执行控制框架，同时借助框架图复用过往经验，从而以更少模拟交互提升任务成功率。
-
----
-
-## 60. RBGA: Residual-Budget Guide Arbitration for Offline-to-Online Safe Reinforcement Learning in Dexterous Manipulation
-
-- **Authors:** Zongyou Yu, Ao Zhou, Xiongbo Shi, ..., Hanli Wang, Guang Chen
-- **Affiliations:** 
-- **Relevance:** 4.0
-- **PDF:** [https://arxiv.org/pdf/2610.33494v1](https://arxiv.org/pdf/2610.33494v1)
-
-**TLDR:** RBGA通过逐步跟踪剩余安全预算并在离线策略指导与在线策略间自适应仲裁动作，实现了灵巧操作中安全且高效的离线到在线强化学习。
-
----
-
-## 61. Continuous-Time Safe Planning and Control for Agile Quadrupeds
-
-- **Authors:** Gage MacLin, Mason Peterson, Camilla Tabasso, ..., Tye Brady, Taskin Padir
-- **Affiliations:** Massachusetts Institute of Technology, University of Iowa, Amazon Fulfillment Technologies & Robotics
-- **Relevance:** 3.9
-- **PDF:** [https://arxiv.org/pdf/2610.35670v1](https://arxiv.org/pdf/2610.35670v1)
-
-**TLDR:** 该论文提出一种基于复合 Bernstein 多项式的实时非凸轨迹优化框架，在完整的全驱动 \(SE(2)\) 模型下为敏捷四足机器人连续时间认证速度约束与动态障碍物避碰安全性，并通过仿真和实机实验实现更快、碰撞更少的导航。
-
----
-
-## 62. Learning Interaction-Aware Path Corrections from Unlabeled Trajectories: A LiDAR-Based Sim-to-Real GNN Framework for Construction Robots
-
-- **Authors:** Yilong Chen, Yong K. Cho
+- **Authors:** Lorenzo Ticozzi, Patricio A. Vela, Panagiotis Tsiotras
 - **Affiliations:** Georgia Institute of Technology
+- **Relevance:** 4.4
+- **PDF:** [https://arxiv.org/pdf/2610.37043v1](https://arxiv.org/pdf/2610.37043v1)
+
+**TLDR:** 该论文提出一种基于几何变量应变参数化与因子图传感器融合的最大后验状态估计框架，用于结合编码器和视觉测量重建刚性—连续体空间机械臂状态，并通过仿真验证了其精度与计算效率。
+
+---
+
+## 25. Mimetic Embodiment Transfer of Human-Humanoid Interaction from In-the-Wild Videos
+
+- **Authors:** Nghia Le (Hann), Khang Nguyen (Hann), Ba Long Tran (Hann), ..., Nguyen (Hann), Anh Nguyen
+- **Affiliations:** Keio University, AIOZ Ltd., RMIT University, National Tsing Hua University, MBZUAI, ...
+- **Relevance:** 4.4
+- **PDF:** [https://arxiv.org/pdf/2610.36615v1](https://arxiv.org/pdf/2610.36615v1)
+
+**TLDR:** HumiTransfer将野外人类互动视频转换为保持空间、语义与接触关系且符合不同机器人身体约束的逼真人形机器人互动动作，并构建了涵盖1200段视频、约50万帧的HumiMimic数据集。
+
+---
+
+## 26. Adapting Video Models for Robot Control via Motion-guided Asymmetric Prediction
+
+- **Authors:** Taeyoung Kim, Junyoung Sung, Heeseung Kwon, Minseop Kim, Jinwoo Shin
+- **Affiliations:** 
+- **Relevance:** 4.4
+- **PDF:** [https://arxiv.org/pdf/2610.36624v1](https://arxiv.org/pdf/2610.36624v1)
+
+**TLDR:** MoGAP通过对视频中的动态区域施加更强噪声并进行非对称视觉预测，使世界动作模型更关注与控制相关的运动信息，从而显著提升机器人操作策略性能。
+
+---
+
+## 27. OmniBrain-0: A Unified Agentic Model for Embodied Intelligence
+
+- **Authors:** Xiaomi Embodied Intelligence Team, Yuechen Luo (University of Macau, Tsinghua University), ..., Hangjun Ye (University of Macau, Tsinghua University)
+- **Affiliations:** University of Macau, Xiaomi Embodied Intelligence Team, Tsinghua University
+- **Relevance:** 4.4
+- **PDF:** [https://arxiv.org/pdf/2610.36013v1](https://arxiv.org/pdf/2610.36013v1)
+
+**TLDR:** OmniBrain-0通过渐进式蒸馏、多人教师在线策略蒸馏（MOPD）和基于规则引导的递归自我改进（RSI），将操作与导航专家能力统一到轻量级高层决策模型中，实现低成本的跨领域任务规划、进度跟踪与失败恢复。
+
+---
+
+## 28. Learning Quality-Controllable Robot Policies with Iterative Hindsight Relabeling
+
+- **Authors:** Sinjae Kang, Dong Kyu Shin, Jaehong Kim, ..., Seonghyeon Ye, Kimin Lee
+- **Affiliations:** 
+- **Relevance:** 4.3
+- **PDF:** [https://arxiv.org/pdf/2610.37393v1](https://arxiv.org/pdf/2610.37393v1)
+
+**TLDR:** 本文提出可在推理时调节机器人执行速度、平滑度等质量属性的策略，并通过在线采集与迭代式事后重标注持续扩展能力，在仿真和真实操作中同时提升任务成功率与执行质量。
+
+---
+
+## 29. Keeping Contact: Task-Adaptive Friction Margins for Bimanual Non-Prehensile Manipulation
+
+- **Authors:** Qian Ying Lee, Lin Yang, Domenico Campolo
+- **Affiliations:** Nanyang Technological University (NTU), Singapore
+- **Relevance:** 4.2
+- **PDF:** [https://arxiv.org/pdf/2610.36961v1](https://arxiv.org/pdf/2610.36961v1)
+
+**TLDR:** 本文提出基于有符号摩擦距离的任务自适应摩擦裕度，并将其嵌入SOCP力规划中，使双臂非抓取倾斜操作能在物体属性变化和模型误差下保持接触、防止滑移，且实验优于固定裕度或无裕度方法。
+
+---
+
+## 30. E0.5: From Reconstructive to Future-Predictive 3D Foundations for Robotic World-Action Modeling
+
+- **Authors:** Era AI Lab Team, Jianhao Lai, Zhihao Zhan, ..., Liang Lin, Guangrun Wang
+- **Affiliations:** X-Era.AI
+- **Relevance:** 4.2
+- **PDF:** [https://arxiv.org/pdf/2610.36011v1](https://arxiv.org/pdf/2610.36011v1)
+
+**TLDR:** E0.5提出以可训练的3D基础模型为核心、联合预测机器人动作与未来3D状态的几何原生世界-动作模型，从而提升仿真与真实机器人操作性能及分布外泛化能力。
+
+---
+
+## 31. SWIM: Learning What Matters from Behaviors for JEPA World Models
+
+- **Authors:** Jiaming Hu, Shi Bo, Yan Zheng, ..., Houyu Zhang, Qingjun Cui
+- **Affiliations:** Unity Technologies, Boston University
+- **Relevance:** 4.2
+- **PDF:** [https://arxiv.org/pdf/2610.36662v1](https://arxiv.org/pdf/2610.36662v1)
+
+**TLDR:** SWIM利用逆动力学从离线行为轨迹中自动学习任务相关的状态特征权重，并以加权状态距离监督JEPA世界模型，从而在无需额外推理开销的情况下提升五项机器人操作任务的视觉规划成功率。
+
+---
+
+## 32. World Dreamer v5-lite: A Multi-Robot World Action Model with One Dreamer
+
+- **Authors:** Guoning Wu (World Agents), Zijian Cai (World Agents), Yuhang Zhang (World Agents), Ying Liu (World Agents), Yongbin Zheng (World Agents)
+- **Affiliations:** World Agents
+- **Relevance:** 4.2
+- **PDF:** [https://arxiv.org/pdf/2610.37518v1](https://arxiv.org/pdf/2610.37518v1)
+
+**TLDR:** World Dreamer v5-lite通过将多机器人校准视觉特征融合为固定大小的共享三维世界状态，并结合姿态感知的机器人查询与遮挡视图协同训练，实现独立动作预测和跨机器人信息共享，在仿真、真实机器人及 RoboCasa365 上取得领先性能。
+
+---
+
+## 33. HC2Robot: Hyper-Connection Transformers with Predicted Foresight for Multi-Terrain Humanoid Parkour
+
+- **Authors:** Wenhao Xu, Yanheng Mai, Yifei Fu, ..., Xinjue Wang, Renjing Xu
+- **Affiliations:** Southern University of Science and Technology, South China Agricultural University, The Hong Kong University of Science and Technology (Guangzhou), CL-TECH
+- **Relevance:** 4.1
+- **PDF:** [https://arxiv.org/pdf/2610.36825v1](https://arxiv.org/pdf/2610.36825v1)
+
+**TLDR:** HC2Robot通过预测可部署的下一次落脚时机、位置与支撑质量，并结合超连接Transformer增强时序推理，使人形机器人在楼梯、间隙、高台和斜坡等多种地形上实现平均97.60%的模拟穿越成功率。
+
+---
+
+## 34. A generalist policy for muscle-driven control across individual musculoskeletal models
+
+- **Authors:** Bozhao Wang, Yinglei Zhu, Zhengqing Li, ..., Huichan Zhao, Xiaoqiang Tang
+- **Affiliations:** Tsinghua University
+- **Relevance:** 4.1
+- **PDF:** [https://arxiv.org/pdf/2610.36535v1](https://arxiv.org/pdf/2610.36535v1)
+
+**TLDR:** MyoAcross通过结合个体肌骨模型构建、形态条件化策略学习和虚拟模型增强，实现了无需个体微调的跨个体肌肉驱动运动控制，在31个留出模型上达到99.24%的完成率并将跟踪误差降低22.60%。
+
+---
+
+## 35. TAPESTRY: A Single Backbone for Video Generation and Robot Control
+
+- **Authors:** Jeremy A. Collins, Seungjae Lee, Rachanon Wachakorn, ..., Vitor Campagnolo Guizilini, Paarth Shah
+- **Affiliations:** Georgia Institute of Technology, University of Maryland, Toyota Research Institute
+- **Relevance:** 4.1
+- **PDF:** [https://arxiv.org/pdf/2610.36823v1](https://arxiv.org/pdf/2610.36823v1)
+
+**TLDR:** TAPESTRY将预训练视频扩散Transformer中的视频块复用为动作Token，通过共享骨干联合学习视频与机器人动作扩散，并在无需生成视频的单步推理下实现高效、平滑且性能强劲的机器人控制。
+
+---
+
+## 36. On Shaky Ground: Characterising Non-Rigid Base Effects in Mobile Manipulation
+
+- **Authors:** Zongyuan Zhang, Christopher Lehnert, Will N. Browne, Jonathan M. Roberts
+- **Affiliations:** Queensland University of Technology
+- **Relevance:** 4.1
+- **PDF:** [https://arxiv.org/pdf/2610.36725v1](https://arxiv.org/pdf/2610.36725v1)
+
+**TLDR:** 该研究表明，轻量级移动机械臂在持续接触任务中会因基座滑移与柔顺产生显著的力跟踪不足和工具位姿误差，而提高基座与地面的阻力可改善力实现并抑制工具位移。
+
+---
+
+## 37. Predict the Swing, Match the Speed: Robotic Pipe Stabbing With Learned Stereo Vision and Residual Reinforcement Learning
+
+- **Authors:** Mohamed Ashraf Mostafa, Taher El-Fakharany, Samir Khaled
+- **Affiliations:** Al-Azhar University, Future University in Egypt (FUE)
+- **Relevance:** 4.1
+- **PDF:** [https://arxiv.org/pdf/2610.37535v1](https://arxiv.org/pdf/2610.37535v1)
+
+**TLDR:** StabBot结合立体视觉、摆动预测与残差强化学习，以匹配速度捕获摆动钻管，在仿真中实现100%成功率，并将接触速度和峰值冲击力分别降低约88%和88%。
+
+---
+
+## 38. Structure-Actuation Co-Design of All-Electric Heavy-Duty Robotic Manipulators
+
+- **Authors:** Mohammad Bahari, Amir Hossein Barjini, Jouni Mattila
+- **Affiliations:** Tampere University
+- **Relevance:** 4.1
+- **PDF:** [https://arxiv.org/pdf/2610.36996v1](https://arxiv.org/pdf/2610.36996v1)
+
+**TLDR:** 本文提出一种质量反馈驱动的双层多目标协同设计框架，联合优化重载全电机械臂的结构与离散执行器配置，并在满足任务姿态约束的同时权衡硬件质量、成本和能耗。
+
+---
+
+## 39. Making Self-Driving Laboratories Auditable:A Unified Framework for Hybrid Actions,Measurements, and Safe Execution
+
+- **Authors:** Zihan Zhang, Zeyu Wu, Xin Zhang, ..., Haohui Que, Tong Zhu
+- **Affiliations:** Shanghai Innovation Institute, Shanghai Lixun Intelligent Technology Co., Ltd, Shanghai Jiao Tong University, East China Normal University, Nankai University
+- **Relevance:** 4.1
+- **PDF:** [https://arxiv.org/pdf/2610.36761v1](https://arxiv.org/pdf/2610.36761v1)
+
+**TLDR:** 本文提出由 LAM、OpenSDL、Safe-SDL 和 L3-Bench 构成的可审计自驱动实验室框架，将测量条件下的机器人轨迹与仪器 API 调用统一生成、执行监控、安全校验、因果记录和端到端评测相结合。
+
+---
+
+## 40. Learning Visuomotor Quadrotor Flight Through Dynamic Narrow Gaps via Differentiable Simulation
+
+- **Authors:** Riccardo Bianco, Yunfan Ren, Jiaxu Xing, Davide Scaramuzza
+- **Affiliations:** University of Zurich
+- **Relevance:** 4.1
+- **PDF:** [https://arxiv.org/pdf/2610.37557v1](https://arxiv.org/pdf/2610.37557v1)
+
+**TLDR:** 该论文提出一种基于可微分仿真的端到端视觉-惯性控制方法，使四旋翼无需教师、规划器或蒸馏即可从零学习穿越动态窄缝，并在仿真中达到99.3%、真实实验中达到80%的成功率。
+
+---
+
+## 41. Rollback: Experience Backtracking in World Models for Policy Improvement
+
+- **Authors:** Jiayi Luo, Yang Zhang, Liliang Chen, ..., Jianxin Li, Guanghui Ren
+- **Affiliations:** 
+- **Relevance:** 4.1
+- **PDF:** [https://arxiv.org/pdf/2610.36068v1](https://arxiv.org/pdf/2610.36068v1)
+
+**TLDR:** Rollback利用世界模型回溯关键决策点并探索反事实动作，通过真实机器人经验持续校准模型、提供细粒度监督，从而在三项机器人任务中显著提升策略成功率并快速超过人类平均水平。
+
+---
+
+## 42. From 12 to 200 Demonstrations: How ACT, Diffusion Policy, SmolVLA and $\pi_{0.5}$ Scale on a Low-Cost Arm
+
+- **Authors:** Simon Cowling
+- **Affiliations:** fysical.ai
+- **Relevance:** 4.0
+- **PDF:** [https://arxiv.org/pdf/2610.37170v1](https://arxiv.org/pdf/2610.37170v1)
+
+**TLDR:** 该研究在低成本机械臂上系统比较了四种模仿学习策略随示范数据从12增至200条的表现，发现少数据时微调的π₀.₅最优、数据较多时从头训练的ACT领先，而训练配方与启动失败等因素同样显著影响性能。
+
+---
+
+## 43. RESPLE2: Inertial-Informed Recursive Non-Uniform Spline Estimation for Multi-Sensor Odometry with Global Refinement
+
+- **Authors:** Ziyu Cao, William Talbot, Song Li, ..., Marco Hutter, Kailai Li
+- **Affiliations:** Linköping University, University of Toronto, ETH Zürich, City University of Hong Kong
+- **Relevance:** 4.0
+- **PDF:** [https://arxiv.org/pdf/2610.37602v1](https://arxiv.org/pdf/2610.37602v1)
+
+**TLDR:** RESPLE2 通过惯性信息驱动的非均匀 B 样条递归估计，在统一框架中融合多类异步传感器并结合回环进行全局优化，从而实现实时、准确且适用于激烈运动的多传感器里程计。
+
+---
+
+## 44. GRAFT: Geometry-Aware Residual Adaptation for Foundation Trackers
+
+- **Authors:** Liang Li, Guoyao Zhang, Xingyu Chen, ..., Mingliang Zhou, Diyun Xiang
+- **Affiliations:** Xiaomi Robotics Lab, HKUST(Guangzhou)
+- **Relevance:** 4.0
+- **PDF:** [https://arxiv.org/pdf/2610.36507v1](https://arxiv.org/pdf/2610.36507v1)
+
+**TLDR:** GRAFT通过冻结基础行为跟踪器并利用轻量级、几何感知的下肢残差适配器结合深度感知调整足部落点、抬脚高度和接触时序，实现无需修改原始参考或重新训练主体模型的人形机器人复杂地形 traversing。
+
+---
+
+## 45. Evaluation-Guided Demonstration Refinement for Vision-Language-Action Policies: The Winning Entry in the MetaFine Open Competition
+
+- **Authors:** Lifan Zheng, Guotao Chen, Zhenyang Li, ..., Qiang Huang, Fan Liu
+- **Affiliations:** Monash University, The Hong Kong Polytechnic University, Southeast University, Harbin Institute of Technology, Shenzhen
+- **Relevance:** 4.0
+- **PDF:** [https://arxiv.org/pdf/2610.36765v1](https://arxiv.org/pdf/2610.36765v1)
+
+**TLDR:** 该论文通过局部评估定位并针对性修订视觉语言动作策略的示范轨迹、补充失败状态下的专家恢复示范，并进行逐指令检查，最终在MetaFine竞赛中以96.66分夺冠。
+
+---
+
+## 46. GAWM: A Compact Latent World-Action Model for Multi-Task Robot Manipulation
+
+- **Authors:** Yang Liu, Xiaoli Liu, Liuzhao Li, ..., Muyuan Liu, Xiang Gao
+- **Affiliations:** Genisom AI
+- **Relevance:** 4.0
+- **PDF:** [https://arxiv.org/pdf/2610.37091v1](https://arxiv.org/pdf/2610.37091v1)
+
+**TLDR:** GAWM提出一种仅77M参数的几何感知潜在世界—动作模型，通过任务条件的DINOv3特征预测未来场景并生成动作，在显著降低训练成本与推理延迟的同时，达到或超越大规模WAM/VLA的机器人操作性能。
+
+---
+
+## 47. REACH: An RL-based Hierarchical Humanoid Crawling Framework for Adaptable Confined Space Traversal
+
+- **Authors:** Shengzhang Xu, Yuning Guo, Weiyi Hu, ..., Zhongyu Li, He Kong
+- **Affiliations:** Chinese University of Hong Kong, Southern University of Science and Technology
+- **Relevance:** 4.0
+- **PDF:** [https://arxiv.org/pdf/2610.36546v1](https://arxiv.org/pdf/2610.36546v1)
+
+**TLDR:** REACH提出一种基于强化学习的分层框架，使Unitree G1能够在可变高度双足行走与爬行模式间平稳切换，并结合历史感知与LiDAR规划实现0.4米级狭窄空间的自主穿越。
+
+---
+
+## 48. HIDRA: Hierarchical Dual-Routing Attention for Replay-Free Lifelong Imitation Learning
+
+- **Authors:** Fanqi Yu, Matteo Tiezzi, Cigdem Beyan, Tommaso Apicella, Vittorio Murino
+- **Affiliations:** Istituto Italiano di Tecnologia, University of Verona, University of Genoa
 - **Relevance:** 3.9
-- **PDF:** [https://arxiv.org/pdf/2610.34060v1](https://arxiv.org/pdf/2610.34060v1)
+- **PDF:** [https://arxiv.org/pdf/2610.36374v1](https://arxiv.org/pdf/2610.36374v1)
 
-**TLDR:** 本文提出一种仅依赖激光雷达的图神经网络框架，从无标注轨迹中学习可迁移、与规划器无关的人机交互路径修正，使施工机器人避让行人时更安全、平滑且高效。
+**TLDR:** HIDRA通过将指令级专家检索与上下文级动态细化解耦，并结合键空间几何正则化，在无回放单遍学习中稳定专家路由、减少灾难性遗忘，并在LIBERO基准上优于现有方法。
 
 ---
 
-## 63. One Scan is Enough: Demonstration-Free Adaptation for Language-Guided Navigation
+## 49. Camera-to-Quadruped Robot Pose Estimation from Sequential Images
 
-- **Authors:** Zhuoyuan Yu, Yuxing Long, Du Wang, ..., Hongwei Fan, Hao Dong
-- **Affiliations:** Peking University, PrimeBot
+- **Authors:** Seobin Hwang, Ji-Seong Beom, Yeong-Jun Cho
+- **Affiliations:** Chonnam National University
 - **Relevance:** 3.9
-- **PDF:** [https://arxiv.org/pdf/2610.33794v1](https://arxiv.org/pdf/2610.33794v1)
+- **PDF:** [https://arxiv.org/pdf/2610.36599v1](https://arxiv.org/pdf/2610.36599v1)
 
-**TLDR:** 本文提出仅凭一次 iPhone 场景扫描、无需人工示范或标注即可生成导航训练任务并适配策略的方法，在五个真实环境中将机器人导航成功率提升至 85%。
-
----
-
-## 64. High-resolution tactile observation makes hidden racket-control mechanisms learnable
-
-- **Authors:** Haoyang Tian, Zhengwei Li, Houcheng Li, ..., Shuo Jiang, Long Cheng
-- **Affiliations:** Chinese Academy of Sciences, University of Chinese Academy of Sciences
-- **Relevance:** 3.9
-- **PDF:** [https://arxiv.org/pdf/2610.35563v1](https://arxiv.org/pdf/2610.35563v1)
-
-**TLDR:** 高分辨率触觉手套结合力学建模揭示了羽毛球拍操控中可学习的“驱动—稳定”机制，并通过针对性反馈显著提升了学习效果。
+**TLDR:** QuadPose提出首个面向四足机器人的单目视频全身18自由度姿态估计框架及QuadSyn基准数据集，通过选择器token、骨架感知注意力和姿态细化应对对称肢体与自遮挡问题，并以约33 FPS实现高精度估计。
 
 ---
 
-## 65. AdaPolicy: Action-Driven Anticipatory Robot Policies via Next-Chunk Prediction
+## 50. Understanding Human-Robot Collaboration through Joint Action
 
-- **Authors:** Fan Yang, Yuting Su, Chen Zhao, Fugui Fan, Peiguang Jing
-- **Affiliations:** University of Bologna, Tianjin University
-- **Relevance:** 3.9
-- **PDF:** [https://arxiv.org/pdf/2610.34280v1](https://arxiv.org/pdf/2610.34280v1)
-
-**TLDR:** AdaPolicy 通过训练时级联预测后续动作块，让机器人策略从动作信号中学会前瞻性控制，无需未来观测监督且不增加推理开销，并在多种仿真与真实任务中提升表现。
-
----
-
-## 66. The Language of Deformation: Semantic Failure Analysis as a Prerequisite for Dexterous Manipulation of Deformable Objects
-
-- **Authors:** Ignacio Cuiral-Zueco, David Hardman, Michele Pierallini, Erfan Shahriari
-- **Affiliations:** Università di Pisa, Clermont Auvergne INP, University of Cambridge, RAI Institute
-- **Relevance:** 3.9
-- **PDF:** [https://arxiv.org/pdf/2610.35103v1](https://arxiv.org/pdf/2610.35103v1)
-
-**TLDR:** 论文提出“语义失败分析”（SFA-DOM）框架，主张通过高分辨率触觉感知识别变形物体的屈曲、塑性变形、撕裂等不同失败模式，并匹配相应的纠正控制策略，以实现更鲁棒的灵巧操作。
-
----
-
-## 67. RAIWAY: A Large-Wheeled Bipedal Robot with Contact-Informed Blind Locomotion
-
-- **Authors:** Kyungmin Nam, Jiseong Lee, Donghyuk Choi, ..., Woojin Kim, Jemin Hwangbo
-- **Affiliations:** Korea Advanced Institute of Science & Technology (KAIST)
-- **Relevance:** 3.9
-- **PDF:** [https://arxiv.org/pdf/2610.33172v1](https://arxiv.org/pdf/2610.33172v1)
-
-**TLDR:** RAIWAY结合20英寸大轮双足机器人与仿真接触信息蒸馏的本体感知控制，无需视觉或接触传感即可在真实环境中连续滚越多种崎岖地形和最高15厘米的台阶。
-
----
-
-## 68. Networked Humanoid Intelligence: Communication, Coordination, Collaboration, and Social Interaction
-
-- **Authors:** Loc X. Nguyen, Huy Q. Le, Ji Su Yoon, ..., Eui-Nam Huh, Choong Seon Hong
-- **Affiliations:** Kyung Hee University, The University of Sydney
-- **Relevance:** 3.9
-- **PDF:** [https://arxiv.org/pdf/2610.34740v1](https://arxiv.org/pdf/2610.34740v1)
-
-**TLDR:** 本文综述网络化人形机器人围绕通信、协调、协作与人机社交智能实现群体能力的研究，并总结其面向身体约束、实时控制、知识共享、安全与责任监督的关键挑战。
-
----
-
-## 69. A Differentiable Chassis Safety Layer for Intelligent Vehicle Motion Control
-
-- **Authors:** Lu Xiong, Xuge Hu, Yufei Song, Weidong Liu, Chen Tang
-- **Affiliations:** Tongji University
+- **Authors:** Chengwen Zhang, Jianyang Wang, Chang Liu, ..., Chun Yu, Yuanchun Shi
+- **Affiliations:** University of Cambridge, Shanghai Jiao Tong University, Tsinghua University, The Hong Kong University of Science and Technology (Guangzhou), Nankai University
 - **Relevance:** 3.8
-- **PDF:** [https://arxiv.org/pdf/2610.33476v1](https://arxiv.org/pdf/2610.33476v1)
+- **PDF:** [https://arxiv.org/pdf/2610.37298v1](https://arxiv.org/pdf/2610.37298v1)
 
-**TLDR:** 提出可微分底盘安全层，将执行器、单轮轮胎力和车辆操稳约束嵌入与车辆预测动力学耦合的连续优化中，并通过风险引导训练协调任务控制与安全修正。
+**TLDR:** 该系统综述基于联合行动理论分析了83篇人机协作实证研究，将协作机制归纳为表征、预测和整合三类能力及九个构念，揭示研究集中于任务分工、伙伴行动处理与协调执行，而共享意图、共同承诺、能动性和协作修复等方面仍存在明显证据缺口。
 
 ---
 
-## 70. ReSight: Task-Driven Self-Improving Memory for Embodied Agents
+## 51. From Biological Curves to Soft Modular Robots: Learning-Based Inverse Design with Uncertainty-Guided Refinement
 
-- **Authors:** Lirong Che, Yang Chen, Yimeng Su, ..., Jian Su, Xueqian Wang
+- **Authors:** Dixiang Wang, Minghao Zha, Arifur Rahman, ..., Muhao Chen, Luyang Zhao
 - **Affiliations:** 
 - **Relevance:** 3.8
-- **PDF:** [https://arxiv.org/pdf/2610.33487v1](https://arxiv.org/pdf/2610.33487v1)
+- **PDF:** [https://arxiv.org/pdf/2610.36681v1](https://arxiv.org/pdf/2610.36681v1)
 
-**TLDR:** ReSight通过EDM机制让具身智能体根据任务需求自我扩展历史观测的记忆表示、查询工具与技能，从而以更少在线调用显著提升时空问答和导航任务性能。
-
----
-
-## 71. TopX: Text-to-Motion for Unseen Skeletons from the Skeleton File Alone
-
-- **Authors:** Tengjiao Sun, Pengcheng Fang, Xiaoyu Zhan, ..., Xiaohao Cai, Hansung Kim
-- **Affiliations:** MOGO AI, Nanjing University, University of Southampton
-- **Relevance:** 3.8
-- **PDF:** [https://arxiv.org/pdf/2610.34321v1](https://arxiv.org/pdf/2610.34321v1)
-
-**TLDR:** TopX提出一种仅凭骨架文件（拓扑、静止姿态和关节名）即可为未见过的任意骨架生成文本驱动动作的模型，并通过SkelShift基准证明其在跨拓扑、物种和绑定方式泛化上优于UniMate。
+**TLDR:** 该论文提出一种结合神经网络代理模型与不确定性引导候选优化的学习式逆向设计框架，可将生物曲线高效转换为软模块机器人的可实现结构，实现约 \(1.9\times10^8\) 倍前向预测加速、93%的形状重构成功率，并完成实体机器人验证。
 
 ---
 
-## 72. Hybrid-time PINNs: Discontinuity-Aware Physics-Informed Neural Networks for Learning Hybrid Dynamical Systems
+## 52. LabWorld: Learning Interactive 4D Worlds for Scientific Experimentation
 
-- **Authors:** Shivanshu Tripathi, Maziar Raissi
+- **Authors:** Suozhi Huang, Kelsey Fu, Binxu Li, ..., Le Cong, Mengdi Wang
 - **Affiliations:** 
 - **Relevance:** 3.8
-- **PDF:** [https://arxiv.org/pdf/2610.33562v1](https://arxiv.org/pdf/2610.33562v1)
+- **PDF:** [https://arxiv.org/pdf/2610.36592v1](https://arxiv.org/pdf/2610.36592v1)
 
-**TLDR:** 针对传统 PINN 难以表示状态跳变的问题，本文提出 HT-PINNs，为每个连续流动区间配置独立网络，并联合估计跳变时刻与未知参数，通过枚举确定跳变数量和模式序列，从而有效学习混合动力系统。
+**TLDR:** LabWorld提出一种基于单目RGB视频的Real2Sim框架，可重建包含3D资产、度量场景、动态物体状态与实验事件的可交互4D实验室世界，并在移液和涡旋实验中优于现有方法、将物理约束满足率提升至100%。
 
 ---
 
-## 73. Video World Models Need Predictable Latents
+## 53. Perceiving and Predicting Dynamic Sports: Spatiotemporal Intelligence in Vision Models for Egocentric Tennis Video
 
-- **Authors:** Mattia Scardecchia, Sherry Yang
-- **Affiliations:** New York University
+- **Authors:** Tudor Braicu, Joseph DelPreto, Jared Boyer, ..., Tim Niklas Seyde, Daniela Rus
+- **Affiliations:** Technische Universität Wien (TU Wien), Liquid AI, Cornell University, Massachusetts Institute of Technology (MIT)
 - **Relevance:** 3.8
-- **PDF:** [https://arxiv.org/pdf/2610.34663v1](https://arxiv.org/pdf/2610.34663v1)
+- **PDF:** [https://arxiv.org/pdf/2610.37619v1](https://arxiv.org/pdf/2610.37619v1)
 
-**TLDR:** 本文通过在保留图像重建能力的同时加入时间预测目标，并采用以过去帧为条件的解码器，使视频世界模型获得更可预测的潜变量，从而提升长时程和分布外预测表现，并显著降低训练与推理成本。
+**TLDR:** 本文构建并公开多视角自我中心网球数据集，系统评估视觉模型对球员与网球的空间定位、轨迹预测和击球时机预判能力，并通过深度辅助和条件扩散模型实现实时全身击球动作生成。
 
 ---
 
-## 74. Active Reachability Learning for Humanoid Recoverability Monitoring
+## 54. When Black-Box Robot Policies Fail: Online Sensor Diagnosis and Repair with a Transparent Surrogate
 
-- **Authors:** Zeyuan Feng, Baljeet Singh, Sarthak Ranjeet Kaingade, Somil Bansal, Bryan Trinh
-- **Affiliations:** Stanford University, Amazon
+- **Authors:** Marc Ziegler, Batu \"Ozen, Sami Mentes, Thomas Waschulzik, Alois Knoll
+- **Affiliations:** Siemens Mobility, Technical University of Munich
 - **Relevance:** 3.8
-- **PDF:** [https://arxiv.org/pdf/2610.33317v1](https://arxiv.org/pdf/2610.33317v1)
+- **PDF:** [https://arxiv.org/pdf/2610.36852v1](https://arxiv.org/pdf/2610.36852v1)
 
-**TLDR:** 论文提出一种结合价值学习与不确定性引导主动探索的方法，系统扩展人形机器人回退策略的可恢复状态包络，并将高不确定性区域保守视为不可恢复，从而提升跌倒监测的覆盖率与可靠性并实现 Unitree G1 真机零样本迁移。
+**TLDR:** 该论文提出一种无需访问黑盒机器人策略内部的透明结构化代理，用于在线诊断并修复传感器故障，在仿真中显著提升多种四足机器人的行走成功率，但其有效性仍受单一策略、人工故障集和缺乏真实硬件验证的限制。
 
 ---
 
-## 75. WorldFailBench: Do World Models Understand Policy Failures?
+## 55. A Trainable CPG Framework for Quadruped Locomotion
 
-- **Authors:** Zheng Zhang, Xiaoyang Tang, Shuaiqi Cheng, ..., Xiaogang Wang, Dacheng Tao
+- **Authors:** Xiyan Liu, Yide Liu, Guoyong Mao, Shaoxing Qu
+- **Affiliations:** Zhejiang University
+- **Relevance:** 3.7
+- **PDF:** [https://arxiv.org/pdf/2610.36537v1](https://arxiv.org/pdf/2610.36537v1)
+
+**TLDR:** 该论文提出CPG-ENN框架，将八神经元CPG的显式节律协调与共享执行神经网络及单一反馈策略结合，在无需在线逆运动学或步态专用控制器的情况下，实现四足机器人五种步态的精准速度控制和近乎可靠的全步态转换（成功率99.39%）。
+
+---
+
+## 56. RAVEN: A Unified Active SLAM System for Rapid Autonomous Visual Exploration with Aerial Robots under Localization Uncertainty
+
+- **Authors:** Xinyi Chen, Yichen Zhang, Chenxing Jiang, Shaojie Shen
+- **Affiliations:** Hong Kong University of Science and Technology
+- **Relevance:** 3.7
+- **PDF:** [https://arxiv.org/pdf/2610.37111v1](https://arxiv.org/pdf/2610.37111v1)
+
+**TLDR:** RAVEN提出了一种面向四旋翼的统一主动SLAM框架，通过权衡探索覆盖与回环定位、利用在线Fisher信息场生成感知安全轨迹，在定位不确定环境中实现高效且鲁棒的自主视觉探索。
+
+---
+
+## 57. Rendering-Free Event Frame Simulation for Fast Reinforcement Learning of Autonomous Robot Navigation
+
+- **Authors:** Dequan Ou, Austin Lopez, Quentin Missinne, Christophe De Wagter, Guido C. H. E. de Croon
+- **Affiliations:** Delft University of Technology
+- **Relevance:** 3.7
+- **PDF:** [https://arxiv.org/pdf/2610.37543v1](https://arxiv.org/pdf/2610.37543v1)
+
+**TLDR:** 本文提出一种无需渲染、直接依据场景几何与运动生成事件流的解析模拟器，使强化学习训练速度提升约三数量级，并让仅1.2 MB的策略在微型无人机微控制器上实现零样本仿真到真实的高成功率自主避障。
+
+---
+
+## 58. A Bi-level Co-design Framework for Lunar Monoped with 2D Jump and Landing Control
+
+- **Authors:** Sanjay Ramkumar, Suraj Kumar
+- **Affiliations:** Indian Institute of Space Science and Technology, U R Rao Satellite Center
+- **Relevance:** 3.7
+- **PDF:** [https://arxiv.org/pdf/2610.37199v1](https://arxiv.org/pdf/2610.37199v1)
+
+**TLDR:** 论文提出双层协同设计框架联合优化月球单足机器人的腿长与控制器，发现轨迹优化比QP任务空间控制在垂直跳跃中可降低17%的运输成本，并结合质心角动量调节与LQR着陆控制实现稳定的二维原地和前向跳跃。
+
+---
+
+## 59. The Trinity:Capability-Driven Recursive Self-Improvement for Multimodal Agents
+
+- **Authors:** Weidong Tang, Ruiheng Wang, Jingxuan Zhang, ..., Odin Zhang, Yang You
 - **Affiliations:** 
-- **Relevance:** 3.8
-- **PDF:** [https://arxiv.org/pdf/2610.33565v1](https://arxiv.org/pdf/2610.33565v1)
-
-**TLDR:** WorldFailBench 提出评估世界模型是否能真实复现机器人策略失败原因、失败阶段及成功转失败边界的基准，并发现现有七种模型即使能预测任务成败，也常无法准确理解策略为何、何时以及在何种条件下失败。
-
----
-
-## 76. Dream to Assist: Intent-Conditioned World Models for Shared Vehicle Control
-
-- **Authors:** Jonathan DeCastro, Thomas Balch, Emily Sumner, ..., Avinash Balachandran, Guy Rosman
-- **Affiliations:** 
 - **Relevance:** 3.7
-- **PDF:** [https://arxiv.org/pdf/2610.34650v1](https://arxiv.org/pdf/2610.34650v1)
+- **PDF:** [https://arxiv.org/pdf/2610.36077v1](https://arxiv.org/pdf/2610.36077v1)
 
-**TLDR:** Dream2Assist通过融合意图推断的世界模型与协同强化学习，让车辆辅助系统在不削弱人类自主性的前提下预判并支持驾驶意图，并在赛车和城市驾驶实验中提升操控力矩一致性、降低碰撞率。
-
----
-
-## 77. RoboDuo: Attempt, Check and Atomic Recovery through Code for Vision-Language-Action Models
-
-- **Authors:** Jie Wang, Bo Zhang, Renzhi Lu, Jianyu Chen
-- **Affiliations:** Robotera, Huazhong University of Science and Technology, Tsinghua University
-- **Relevance:** 3.7
-- **PDF:** [https://arxiv.org/pdf/2610.34108v1](https://arxiv.org/pdf/2610.34108v1)
-
-**TLDR:** RoboDuo 用代码编排“整任务 VLA 先尝试—检查是否完成—失败后由原子技能 VLA 接手剩余步骤”，无需修改原模型权重，即可提升长程任务成功率并恢复真实机器人的失败执行。
+**TLDR:** The Trinity 通过 Creator、Explorer 和 Evolver 将多模态任务按共享能力组织，并结合 Real2Sim2Real、递归 Harness 演化与能力感知路由实现可迁移的智能体自我改进，在训练和未见基准上分别平均提升 34 和 26 个百分点。
 
 ---
 
-## 78. WMEval: Evaluating Interactive World Models Grounded on Physical Simulations
+## 60. Remember Where You Walk: Learning Spatial Memory for End-to-End Legged Robot Exploration
 
-- **Authors:** Lanxiang Hu, Yixin Huang, Abhilash Shankarampeta, ..., Tajana Rosing, Hao Zhang
-- **Affiliations:** 
-- **Relevance:** 3.7
-- **PDF:** [https://arxiv.org/pdf/2610.33894v1](https://arxiv.org/pdf/2610.33894v1)
-
-**TLDR:** WMEval基于Unity物理仿真构建了涵盖9个场景和多维指标的交互式世界模型评测基准，通过状态级对齐揭示现有模型在物理因果一致性方面的显著不足。
-
----
-
-## 79. SPECOLA: A Tool for Specification Driven Robot Evaluation
-
-- **Authors:** Immanuel Ampomah Mensah, Hadas Kress-Gazit
-- **Affiliations:** 
-- **Relevance:** 3.7
-- **PDF:** [https://arxiv.org/pdf/2610.35730v1](https://arxiv.org/pdf/2610.35730v1)
-
-**TLDR:** SPECOLA 是一个基于信号时序逻辑（STL）的机器人仿真评估工具，可超越简单成功率，从满足程度、鲁棒性、约束违反和持续性等维度细致分析机器人行为，并支持多种仿真环境集成。
-
----
-
-## 80. Power-of-Two Leaky Integrate-and-Fire Neurons for Event-Driven Vision-Language-Action Inference
-
-- **Authors:** Rui Liu, He Lv, Ziyao Zhang, Rui Ma, Rongxiang Nie
-- **Affiliations:** Sivy Limited
-- **Relevance:** 3.7
-- **PDF:** [https://arxiv.org/pdf/2610.33658v1](https://arxiv.org/pdf/2610.33658v1)
-
-**TLDR:** PoT-LIF 通过带符号的二次幂脉冲、残差保持机制及Heartbeat局部推理，将事件驱动计算嵌入预训练VLA模型，在几乎不损失LIBERO闭环控制性能的同时实现约86.95%的算术能耗降低。
-
----
-
-## 81. From Intelligence to Autonomy: Foundations and Construction of Autonomous Agents for Future Intelligent Systems
-
-- **Authors:** Hongda Zhang, Ziqing Zhou, Yuning Chen, ..., Zhao Huang, Haining Xu
-- **Affiliations:** Jiangsu Chuangling Intelligent Technology Co., Ltd., Fudan University
-- **Relevance:** 3.7
-- **PDF:** [https://arxiv.org/pdf/2610.33445v1](https://arxiv.org/pdf/2610.33445v1)
-
-**TLDR:** 本文将自主智能体定义为在明确身份与权限边界内，通过“运行—生存性维护—反思元控制—受治理学习”四重闭环持续完成任务、维持自身可运行性并适应变化的系统，并以五项仿真初步验证了该框架的可行性。
-
----
-
-## 82. Behavioural Quality Is Not Learning Utility: Objective Mismatch in Human Behaviour Models for Robot Learning
-
-- **Authors:** Haoyang Jiang, Dana Kulic, Michael Burke, Pamela Carreno-Medrano
-- **Affiliations:** Monash University
-- **Relevance:** 3.7
-- **PDF:** [https://arxiv.org/pdf/2610.34839v1](https://arxiv.org/pdf/2610.34839v1)
-
-**TLDR:** 研究发现，在高速驾驶和物体递交任务中，衡量人类行为模型与真实数据相似度的指标，无法稳定预测其对机器人强化学习的帮助；模型评估还受轨迹表示影响，而且偏离真实行为分布的训练模型有时反而能带来更好的策略表现。
-
----
-
-## 83. AGQ: Action-Guided Ultra-Low-Bit Quantization for Vision-Language-Action Models
-
-- **Authors:** Xuhong Qiu, Zhuoyu Wu, Qiawei Zheng, ..., Wenqi Fang, Rapha\"{e}l C. -W. Phan
-- **Affiliations:** Monash University, Chinese Academy of Sciences, Hong Kong University of Science & Technology, Southeast University
-- **Relevance:** 3.7
-- **PDF:** [https://arxiv.org/pdf/2610.33074v1](https://arxiv.org/pdf/2610.33074v1)
-
-**TLDR:** AGQ通过结合动作敏感度与权重恢复成本进行矩阵级混合精度分配，并配合逐通道校准、无损编码和分块恢复，在LIBERO上以W3达到92.7%的任务成功率，同时实现最高6.10倍模型压缩。
-
----
-
-## 84. From Language to Drives: A Multimodal Framework for Aligning Autonomous Robots with Human Purposes
-
-- **Authors:** Diana Cerdas-Vargas, Alejandro Romero, Richard J. Duro
-- **Affiliations:** Universidade da Coruña
+- **Authors:** Leon Magnus, Nico Bohlinger, Jan Peters, Oleg Arenz
+- **Affiliations:** Technical University of Darmstadt, Robotics Institute Germany (RIG), German Research Center for AI (DFKI), hessian.AI
 - **Relevance:** 3.6
-- **PDF:** [https://arxiv.org/pdf/2610.35629v1](https://arxiv.org/pdf/2610.35629v1)
+- **PDF:** [https://arxiv.org/pdf/2610.37203v1](https://arxiv.org/pdf/2610.37203v1)
 
-**TLDR:** 该论文提出一种利用LLM/VLM将人类自然语言目的经多模态澄清转化为机器人任务与驱动信号的三层框架，使开放式学习机器人在保持自主目标和技能发展能力的同时实现可交互、可验证的人机意图对齐。
+**TLDR:** 论文提出局部空间矩阵记忆（LSMM），将任务相关信息按机器人位置写入空间记忆并与端到端强化学习联合训练，使腿式机器人在迷宫探索中既能保持高覆盖率，又能有效记住并重建环境布局，将重建误差降低至基线的三分之一。
 
 ---
 
-## 85. 3D-Force Estimation for Dual-arm Manipulation of Deformable Linear Objects via Factor Graphs
+## 61. Spiking Neuromorphic Control for Periodic Orbits Stabilization in Underactuated Robots: A Greedy Lyapunov-Based Approach
 
-- **Authors:** Annika Delucchi, Vincenzo Di Paola, Bruno Marco Quadrelli, Matteo Zoppi
-- **Affiliations:** Jet Propulsion Laboratory, California Institute of Technology, University of Genova
+- **Authors:** Maksim Surov, Oleg Sumenkov
+- **Affiliations:** Sirius University of Science and Technology
 - **Relevance:** 3.6
-- **PDF:** [https://arxiv.org/pdf/2610.35058v1](https://arxiv.org/pdf/2610.35058v1)
+- **PDF:** [https://arxiv.org/pdf/2610.37310v1](https://arxiv.org/pdf/2610.37310v1)
 
-**TLDR:** 本文提出一种基于因子图的概率方法，仅利用单一类型传感信息，联合重建线状柔性物体的形状并估计其所受三维接触力的大小、方向与位置。
+**TLDR:** 本文提出一种基于贪心Lyapunov设计的脉冲神经网络控制器，通过横向线性化实现欠驱动机器人周期轨道的实用稳定，并在蝴蝶机器人上得到验证。
 
 ---
 
-## 86. Benchmarking Obstacle-Conditioned Safety in Household Robot Navigation
+## 62. Learning to Exploit Passive Dynamics for Energy-Efficient Target Hopping of a Spring-Legged Quadcopter
 
-- **Authors:** Hyunwoong Bae, Jisu Han, Jiyeon Choi, Dohoon Kim, Taesup Moon
-- **Affiliations:** 
+- **Authors:** Ruigang Chen, Qi Zhang, Zhicheng Zhong, ..., Yizhar Or, Mingyi Liu
+- **Affiliations:** Guangdong Technion - Israel Institute of Technology, Technion-Israel Institute of Technology
 - **Relevance:** 3.6
-- **PDF:** [https://arxiv.org/pdf/2610.34674v1](https://arxiv.org/pdf/2610.34674v1)
+- **PDF:** [https://arxiv.org/pdf/2609.15447v1](https://arxiv.org/pdf/2609.15447v1)
 
-**TLDR:** 该论文提出 OSMA-Bench 与语义敏感性指标 SSI，揭示现有 VLM/VLA 导航策略虽能识别障碍物安全语义，却难以将其转化为相应的避障距离、速度和动作适应性，而在 VLM 中加入显式参数推理步骤可改善这一语义到运动的落地。
-
----
-
-## 87. PushAround: Collaborative Path Clearing via Physics-Informed Hybrid Search
-
-- **Authors:** Zili Tang, Zongyuan Li, Zishao Qiao, Meng Guo
-- **Affiliations:** Peking University
-- **Relevance:** 3.6
-- **PDF:** [https://arxiv.org/pdf/2610.35062v1](https://arxiv.org/pdf/2610.35062v1)
-
-**TLDR:** PushAround结合通道连通性分析与物理仿真，规划多机器人协同推移障碍物的可执行方案，为大型车辆清出可通行路径。
+**TLDR:** 研究提出一种无需显式跳跃状态机和姿态PID的端到端PPO控制器，通过利用弹簧腿的被动动力学，使弹簧腿四旋翼在保持目标高度跳跃和更精准着陆的同时，将实测周期平均功耗降低30.7%、总归一化推力降低49.8%。
 
 ---
 
-## 88. Enabling Motion-Induced WiFi-CSI Sensing in Multi-Robot Systems: A Simulation Framework
+## 63. Program-Level Adversarial Co-Adaptive Self-Play for Robotic Security
 
-- **Authors:** Brendan Dijkstra, Ninad Jadhav, Maurice Stoffijn, Stephanie Gil, Bahar Haghighat
-- **Affiliations:** Harvard University, University of Groningen
-- **Relevance:** 3.6
-- **PDF:** [https://arxiv.org/pdf/2610.34034v1](https://arxiv.org/pdf/2610.34034v1)
-
-**TLDR:** 该论文提出一个开源的Gazebo仿真框架，将基于机器人运动和WiFi-CSI的WSR感知流程与ROS集成，并通过仿真与TurtleBot3实测验证其在多机器人方位估计和定位中的有效性。
-
----
-
-## 89. DSGN: A Dual-Stream Gated Network for Scalable Simultaneous Surveillance and Containment
-
-- **Authors:** Heng Zhang, Ziyang Zuo, Guoxiang Zhao, Xiaoqiang Ren
-- **Affiliations:** National Key Laboratory of Maritime Unmanned Swarm Intelligence, Shanghai University
-- **Relevance:** 3.6
-- **PDF:** [https://arxiv.org/pdf/2610.34084v1](https://arxiv.org/pdf/2610.34084v1)
-
-**TLDR:** DSGN通过将监视与围捕建模为双流特征并结合上下文感知门控与概率先验，实现了大规模多机器人系统中稳定、可扩展且高效的任务切换与协同控制。
-
----
-
-## 90. OSWAM: An Effective World Action Model with One-Step Action Generation
-
-- **Authors:** Guowen Zhang, Liyi Chen, Xu Hu, ..., Chenhang He, Lei Zhang
-- **Affiliations:** The Hong Kong Polytechnic University
-- **Relevance:** 3.6
-- **PDF:** [https://arxiv.org/pdf/2610.35850v1](https://arxiv.org/pdf/2610.35850v1)
-
-**TLDR:** OSWAM通过引入具有结构化动作先验的想象令牌并结合特权信息蒸馏，实现仅需一次扩散去噪即可生成高质量动作，在自动驾驶和具身控制中保持多步WAM性能的同时获得约3倍加速、最低40ms实时推理延迟。
-
----
-
-## 91. ScheNav: Schematic-Guided Object Goal Navigation
-
-- **Authors:** Guichen Huang, Chenchen Jing, Che Sun, Yuwei Wu, Yunde Jia
-- **Affiliations:** Beijing Institute of Technology, Shenzhen MSU-BIT University, Zhejiang University of Technology
+- **Authors:** Leo Benaharon, Chi Zhang, Wei Zheng, Weifan Zhang, Yifan Wei
+- **Affiliations:** Isuzu Technical Center of America
 - **Relevance:** 3.5
-- **PDF:** [https://arxiv.org/pdf/2610.34286v1](https://arxiv.org/pdf/2610.34286v1)
+- **PDF:** [https://arxiv.org/pdf/2610.36143v1](https://arxiv.org/pdf/2610.36143v1)
 
-**TLDR:** ScheNav 将粗略、可能含噪或不完整的示意图与智能体逐步累积的环境观测融合，预测导航价值场以指导探索和停步，并借助纯二维模拟训练实现对真实场景及多种引导形式的迁移。
-
----
-
-## 92. What Does World Modeling Actually Improve in Robot Action Learning?
-
-- **Authors:** Hanwen Cui, Yuanyuan Li, Qing Guo, ..., Xi Chen, Jie Cao
-- **Affiliations:** Institute of Automation, Chinese Academy of Sciences, Beijing Geekplus Technology Co., Ltd., Central South University, University of Chinese Academy of Sciences
-- **Relevance:** 3.5
-- **PDF:** [https://arxiv.org/pdf/2610.34593v1](https://arxiv.org/pdf/2610.34593v1)
-
-**TLDR:** 未来视频预测作为辅助监督能显著提升机器人在已见任务上的执行成功率，但其对未见任务和环境变化的迁移优势并不稳定，且轻量级预测器即可实现收益而无需大型视频生成模型。
+**TLDR:** 论文提出一种无需模型微调、通过编码智能体在真实机器人软件栈中迭代生成攻击与防御程序的对抗协同自博弈框架，并在自动驾驶和人形机器人上进行八代实验，展示了局部任务恢复（直接执行器接管、输入状态校验改进）但尚未实现持续稳健性。
 
 ---
 
-## 93. OS-Wizard: Scaling Computer-Using Agents to Specialized Software via Knowledge-Guided Exploration
+## 64. SOMA: A Benchmark for Fine-Grained Egocentric Behavior and Body-Motion Understanding
 
-- **Authors:** Zhoumianze Liu, Zichen Ding, Bowen Yang, ..., Qiushi Sun, Yu Qiao
-- **Affiliations:** Shanghai AI Laboratory, Nanjing University, University of Science and Technology of China, The University of Hong Kong, East China Normal University, ...
-- **Relevance:** 3.5
-- **PDF:** [https://arxiv.org/pdf/2610.33907v1](https://arxiv.org/pdf/2610.33907v1)
-
-**TLDR:** OS-Wizard 结合教程引导、GUI 与原生代码操作及分支探索，高效收集专用软件操作轨迹并训练智能体，使其在专业桌面任务上的表现提升至超越人类基准。
-
----
-
-## 94. Causal-based approaches to explain and learn from self-extension - A review
-
-- **Authors:** Rebeca Marfil, Pablo Bustos, Antonio Bandera
-- **Affiliations:** Universidad de Málaga, Universidad de Extremadura
-- **Relevance:** 3.5
-- **PDF:** [https://arxiv.org/pdf/2610.33227v1](https://arxiv.org/pdf/2610.33227v1)
-
-**TLDR:** 本文综述基于因果推理的可解释自主机器人，使其能够理解并解释自身行为与感知异常、吸收人类反馈更新知识，从而实现自我延伸、提升适应性与可信度。
-
----
-
-## 95. MATE-BT: A Behavior-Tree-Based Framework for Hierarchically Decentralized Mission Autonomy in Heterogeneous Multi-Robot Teams
-
-- **Authors:** Sunbeen Lee, Hoseon Gi, Jik Hur, Inmo Jang
-- **Affiliations:** Korea Aerospace University, Korea Aerospace Industries, Ltd.
-- **Relevance:** 3.5
-- **PDF:** [https://arxiv.org/pdf/2610.35429v1](https://arxiv.org/pdf/2610.35429v1)
-
-**TLDR:** MATE-BT 提出一种基于行为树的分层去中心化多机器人框架，通过可转移的领导者、可插拔任务分配和机器人本地自适应执行，在新增目标及机器人或领导者故障时保持任务连续性，并实现机载实时运行。
-
----
-
-## 96. Extended LASMP: Language Aided Subset Sampling Based Motion Planner for Drone Navigation
-
-- **Authors:** Saswati Bhattacharjee, Anirban Sinha, Mukulika Ghosh, Chinwe Ekenna
-- **Affiliations:** GE Aerospace Research, University at Albany, Missouri State University
-- **Relevance:** 3.5
-- **PDF:** [https://arxiv.org/pdf/2610.34054v1](https://arxiv.org/pdf/2610.34054v1)
-
-**TLDR:** 本文提出将自然语言指令转化为偏航角与高度约束，并据此引导无人机在三维空间中进行命令对齐采样，从而在保持概率完备性的同时减少搜索开销并生成无碰撞路径。
-
----
-
-## 97. InteractiveWorld: A Verifiable Human-Centric Environment for Building Better Interactive MLLM Assistants
-
-- **Authors:** Qinsi Wang, Wei Wen, Chong Zhou, ..., Raghuraman Krishnamoorthi, Qi Qian
+- **Authors:** Matea Tashkovska, Na\"el Ouerghemi, Haozhe Qi, Alexander Mathis
 - **Affiliations:** 
 - **Relevance:** 3.5
-- **PDF:** [https://arxiv.org/pdf/2610.33966v1](https://arxiv.org/pdf/2610.33966v1)
+- **PDF:** [https://arxiv.org/pdf/2610.36384v1](https://arxiv.org/pdf/2610.36384v1)
 
-**TLDR:** InteractiveWorld提出首个可验证的人机闭环交互环境及包含120项动态任务的InteractiveBench，系统评估表明当前前沿多模态大模型在真实物理世界中作为人类助手仍远不可靠。
-
----
-
-## 98. Revisiting Direct Control: A Field Evaluation of Sensor Fusion Efficacy in Teleoperating Full-Scale Autonomous Vehicles via Bird's Eye View
-
-- **Authors:** Stanis{\l}aw Kuczma, S{\l}awomir K. Tadeja, Micha{\l} R. Nowicki
-- **Affiliations:** Poznań University of Technology, Massachusetts Institute of Technology
-- **Relevance:** 3.5
-- **PDF:** [https://arxiv.org/pdf/2610.35630v1](https://arxiv.org/pdf/2610.35630v1)
-
-**TLDR:** 在全尺寸车辆实地遥操作实验中，融合摄像头与激光雷达的鸟瞰图相比单一摄像头或激光雷达视图，能提升可用性、减轻认知负荷并缩短任务完成时间。
+**TLDR:** SOMA 提出一个包含 1,632 个问题的第一人称视频细粒度身体运动理解基准，发现当前多模态大模型在身体姿态、运动动态和时间推理上显著落后于人类，并提供配套训练数据与基线以推动研究。
 
 ---
 
-## 99. Cross-User Adaptation for sEMG Gesture Recognition via Continual Learning
+## 65. TOPS: Reshaping Flow Source and Transport for Multi-Task Robot Manipulation
 
-- **Authors:** Aran Ramakrishnan, Shubhi Mishra, Tyler Ham, Assel Kembay, Jason Eshraghian
-- **Affiliations:** University of California, Santa Cruz
+- **Authors:** Tuo An, Chuhao Zhou, Jiahua Dong, ..., Jindou Jia, Jianfei Yang
+- **Affiliations:** 
 - **Relevance:** 3.5
-- **PDF:** [https://arxiv.org/pdf/2610.34011v1](https://arxiv.org/pdf/2610.34011v1)
+- **PDF:** [https://arxiv.org/pdf/2610.36694v1](https://arxiv.org/pdf/2610.36694v1)
 
-**TLDR:** 该论文发现，在跨用户和新增手势的sEMG持续学习中，采用无状态、打乱窗口训练的经验回放策略最能兼顾适应性与抗灾难性遗忘，并显著优于EWC和朴素微调。
+**TLDR:** TOPS通过为不同任务定制生成先验与传输调度，在不改变网络结构的情况下显著提升多任务机器人操作性能与数据效率，并以单步推理达到优于十步标准流匹配的效果。
 
 ---
 
-## 100. EAST: Embodied AI Safety Testing via Systematic Fault Injection in Digital Twins
+## 66. Vision-Language Agents Can Learn in Their Own Latent Worlds
 
-- **Authors:** Yuhao Tian, Tao Li, Ling Zhou, ..., Rubing Huang, Tsong Yueh Chen
-- **Affiliations:** Macau University of Science and Technology, University of Nottingham Ningbo China, Beihang University, Swinburne University of Technology
-- **Relevance:** 3.5
-- **PDF:** [https://arxiv.org/pdf/2610.34358v1](https://arxiv.org/pdf/2610.34358v1)
+- **Authors:** Haoxi Li, Sikai Bai, Jianfei Ma, ..., Jie Zhang, Song Guo
+- **Affiliations:** 
+- **Relevance:** 3.4
+- **PDF:** [https://arxiv.org/pdf/2610.36925v1](https://arxiv.org/pdf/2610.36925v1)
 
-**TLDR:** EAST 将文献中的安全风险转化为数字孪生中的可执行故障注入测试，并通过运行时验证与可复现证据评估机器人安全，揭示任务成功仍可能伴随安全违规。
+**TLDR:** Dwell 将视觉语言模型重构为可递归预测和决策的潜在世界模型，使智能体能通过真实交互与潜在想象高效改进策略，并在五个视觉环境中以更低计算成本取得最佳总体性能。
+
+---
+
+## 67. Bridging Exploration and Loss of Plasticity in On-Policy Reinforcement Learning
+
+- **Authors:** Andrea Vasco Grieco, Evelyn D'Elia, Edoardo Caldarelli, Raffaello Camoriano
+- **Affiliations:** Istituto Italiano di Tecnologia, Politecnico di Torino
+- **Relevance:** 3.4
+- **PDF:** [https://arxiv.org/pdf/2610.36309v1](https://arxiv.org/pdf/2610.36309v1)
+
+**TLDR:** 该论文从理论、基准测试和机器人实验表明，在采用高斯策略的PPO中，策略标准差σ趋近于零会导致梯度爆炸、损失曲率变尖及有效秩塌缩，从而加剧策略的可塑性丧失（LoP），并解释了现有缓解方法为何有效。
+
+---
+
+## 68. ScIntBench: Physical Interaction Plausibility in 3D Scene Generation
+
+- **Authors:** Wendi Ying, Daochang Liu, Leonid Sigal, Ajmal Saeed Mian
+- **Affiliations:** Canada CIFAR AI Chair, The University of Western Australia, University of British Columbia
+- **Relevance:** 3.4
+- **PDF:** [https://arxiv.org/pdf/2610.37326v1](https://arxiv.org/pdf/2610.37326v1)
+
+**TLDR:** ScIntBench提出统一的物理交互评测基准，通过在仿真中执行推、开、探测等操作揭示：3D场景即使语义和静态物理合理，也未必具备交互能力或动态可靠性，当前系统的交互成功率仍普遍较低。
+
+---
+
+## 69. Learning to Look Beyond Screens: Transferable Visual Observation from GUI Grounding
+
+- **Authors:** Ruilin Yao, Xinyu Qiu, Tianyu Zou, ..., Shuheng Shen, Changhua Meng
+- **Affiliations:** Ant Group, Chinese Academy of Sciences (CAS), Zhejiang University, Wuhan University of Technology
+- **Relevance:** 3.4
+- **PDF:** [https://arxiv.org/pdf/2610.37093v1](https://arxiv.org/pdf/2610.37093v1)
+
+**TLDR:** LBS 通过 GUI 定位轨迹进行监督微调并以强化学习优化多轮裁剪观察策略，使模型学会更有效地“看哪里、何时看”，并将这一能力迁移到非 GUI 的图像、图表等视觉任务。
+
+---
+
+## 70. Multi-Agent Reinforcement Learning of Co-Adaptive Hip Exoskeleton Control (MARL-Exo) for Metabolic Energy Reduction
+
+- **Authors:** Yifei Yuan, Jakob Wolf, Ghaith Androwis, Xianlian Zhou
+- **Affiliations:** Kessler Foundation, New Jersey Institute of Technology
+- **Relevance:** 3.4
+- **PDF:** [https://arxiv.org/pdf/2610.37441v1](https://arxiv.org/pdf/2610.37441v1)
+
+**TLDR:** MARL-Exo通过在仿真中让肌肉骨骼人体与髋部外骨骼协同适应，并以代谢能耗为奖励训练出无需个体调参的控制器，使8名受试者穿戴设备行走时净代谢率平均降低18.3%。
+
+---
+
+## 71. Generalizable Target-Less Joint Intrinsic-Extrinsic Camera-LiDAR Calibration using Deep Pixel-Point Correspondences
+
+- **Authors:** Simon Bultmann, Daniele Cattaneo, Abhinav Valada
+- **Affiliations:** University of Freiburg
+- **Relevance:** 3.4
+- **PDF:** [https://arxiv.org/pdf/2610.37350v1](https://arxiv.org/pdf/2610.37350v1)
+
+**TLDR:** 本文提出一种无需标定靶、可跨传感器配置泛化的深度像素—点对应框架，从原始图像和激光雷达数据中迭代联合估计相机内参、畸变参数及外参，并在KITTI和三种真实机器人平台上实现了更高的外参精度。
+
+---
+
+## 72. Vision-Language-Action or World-Action? Just Action Models
+
+- **Authors:** Yonghao Yu, Lang Huang, Runyi Li, Toshihiko Yamasaki
+- **Affiliations:** 
+- **Relevance:** 3.4
+- **PDF:** [https://arxiv.org/pdf/2610.37219v1](https://arxiv.org/pdf/2610.37219v1)
+
+**TLDR:** JAM 将动作损失与预测未来观测表征的前瞻损失解耦结合，在无需视觉生成或额外推理模块的情况下提升机器人控制性能，并在 LIBERO/LIBERO-Plus 上优于 FastWAM 和 ImageWAM、同时将在线训练 FLOPs 降低 73%。
+
+---
+
+## 73. Hy-Nomas: Towards Free-form Interactive World Generation
+
+- **Authors:** Qiaoling Chen, Jiaxiang Cheng, Xueqing Deng, ..., Zhengguang Zhou, Kai Zou
+- **Affiliations:** 
+- **Relevance:** 3.4
+- **PDF:** [https://arxiv.org/pdf/2610.36729v1](https://arxiv.org/pdf/2610.36729v1)
+
+**TLDR:** Hy-Nomas 是一种基于 8B 扩散模型的交互式视频世界模型，可通过多轮自由文本指令和连续相机控制生成连贯、可变长度且能保留历史与动作后果的视频世界，并在人工评测中优于现有方法。
+
+---
+
+## 74. Interpretable Meta-Policies for Neural Decision Making
+
+- **Authors:** Raban Emunds, Jannis Bl\"uml, Quentin Delfosse, Kristian Kersting
+- **Affiliations:** 
+- **Relevance:** 3.4
+- **PDF:** [https://arxiv.org/pdf/2610.37451v1](https://arxiv.org/pdf/2610.37451v1)
+
+**TLDR:** NEXUS通过在低层使用神经技能、在高层采用可解释的符号元策略，实现了兼具性能、目标对齐性、鲁棒性与抗奖励投机能力的可解释强化学习。
+
+---
+
+## 75. LingGS: Decoupling Feed-Forward Geometry Prediction from Camera Tracking for High-Fidelity Gaussian SLAM
+
+- **Authors:** Da Li, Yihan Zang, Ivan Viola, Zeyu Wang, Dominik Engel
+- **Affiliations:** 
+- **Relevance:** 3.4
+- **PDF:** [https://arxiv.org/pdf/2610.36853v1](https://arxiv.org/pdf/2610.36853v1)
+
+**TLDR:** LingGS 将冻结的流式3D基础模型生成的深度先验与基于特征重投影的显式几何相机跟踪解耦结合，实现高保真高斯场景重建、精准位姿估计，并在单张RTX 4090上以约7 FPS运行、吞吐量较现有方法提升2–3倍。
+
+---
+
+## 76. Leveraging Distributed Sensing and Hyperdimensional Computing for Non-Line-of-Sight Passive Object Sensing
+
+- **Authors:** Placido Mursia, Marco Rossanese, Francesco Devoti, ..., Xi Li, Xavier Costa-Perez
+- **Affiliations:** 
+- **Relevance:** 3.4
+- **PDF:** [https://arxiv.org/pdf/2610.37519v1](https://arxiv.org/pdf/2610.37519v1)
+
+**TLDR:** 该论文提出一种结合分布式无线信道感知与超维计算（HDC）的非视距被动目标检测框架，使智能工厂机器人能在遮挡和视野之外以低计算复杂度识别人或障碍物，并以最高89%的准确率提升碰撞规避与路径规划安全性。
+
+---
+
+## 77. Curriculum-Driven Deep Reinforcement Learning for Autonomous Far-Range Rocket Landing
+
+- **Authors:** Atin Chowdhury, Piyush Joshi
+- **Affiliations:** Indian Institute of Information Technology
+- **Relevance:** 3.3
+- **PDF:** [https://arxiv.org/pdf/2610.35954v1](https://arxiv.org/pdf/2610.35954v1)
+
+**TLDR:** 该论文提出结合三阶段课程学习、评论家预热、经验回放防遗忘、全旋转矩阵观测与改进奖励函数的深度强化学习框架，使火箭能从1000–1500单位远处自主导航并精准软着陆，在10万回合评估中达到99.98%的成功率，显著优于基线的68.31%。
+
+---
+
+## 78. BoxWorld: Let World Engines Control and Video Generators Render
+
+- **Authors:** Zike Wu, Ahmed Hatem, Chintan Trivedi, ..., Lele Wang, Renjie Liao
+- **Affiliations:** Canada CIFAR AI Chair, Vector Institute for AI, Huawei Canada, University of British Columbia
+- **Relevance:** 3.3
+- **PDF:** [https://arxiv.org/pdf/2610.36371v1](https://arxiv.org/pdf/2610.36371v1)
+
+**TLDR:** BoxWorld通过将用户定义的交互规则交给世界引擎推理、再由生成式渲染器根据对象状态实时生成视频，实现了可控且连贯的交互式视频世界。
+
+---
+
+## 79. Integrated Design and Reproducible Feasibility Analysis of a Four-Wheel Rover with Packet-Commanded Imaging, LiDAR Ranging, and Learning-Assisted Target Recognition
+
+- **Authors:** Sabik Bin Sultan, Shafi Bin Sultan, Safwan Sadad, Aranya Abeer Khan Prapya, Maria Sultan
+- **Affiliations:** 
+- **Relevance:** 3.3
+- **PDF:** [https://arxiv.org/pdf/2610.36816v1](https://arxiv.org/pdf/2610.36816v1)
+
+**TLDR:** 本文提出一套可复现的四轮教育漫游车集成设计与可行性评估框架，量化分析其速度、爬坡扭矩、视觉/LiDAR误差及目标识别与指令执行性能，并指出该方案尚缺乏实车试验验证。
+
+---
+
+## 80. Variational Optimal Control for Diffusion Guidance
+
+- **Authors:** Ruoyu Wang, Xinyi Ye, Yunshuo Shi, ..., Beier Zhu, Chi Zhang
+- **Affiliations:** University of Science and Technology of China, Westlake University, Shandong University, Shanghai Jiao Tong University
+- **Relevance:** 3.3
+- **PDF:** [https://arxiv.org/pdf/2610.37146v1](https://arxiv.org/pdf/2610.37146v1)
+
+**TLDR:** 本文提出统一的变分最优控制框架，通过去噪器雅可比将输出偏好映射为采样时引导（VOG）或模型参数更新（DVOC），并在图像生成与奖励适配实验中验证其有效性。
+
+---
+
+## 81. Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents
+
+- **Authors:** Pranjal Aggarwal, Sean Welleck
+- **Affiliations:** 
+- **Relevance:** 3.3
+- **PDF:** [https://arxiv.org/pdf/2610.37567v1](https://arxiv.org/pdf/2610.37567v1)
+
+**TLDR:** Gym-Anything-RT构建了100个可控实时视觉小游戏评测智能体，揭示其在动态环境中感知与行动能力显著不足（实时通过率仅9%，暂停环境后升至75%）。
+
+---
+
+## 82. GUI-JEPA: Candidate-Conditioned JEPA Latents as a Fast Action Policy for Mobile GUI Agents
+
+- **Authors:** Bingchao Wang, Yongcheng Jing, Shunyu Liu, ..., Wei Liu, Dacheng Tao
+- **Affiliations:** Nanyang Technological University, Shanghai Jiao Tong University, Alibaba Cloud Computing
+- **Relevance:** 3.3
+- **PDF:** [https://arxiv.org/pdf/2610.36877v1](https://arxiv.org/pdf/2610.36877v1)
+
+**TLDR:** GUI-JEPA提出一种无需自回归解码的候选动作条件化JEPA潜变量策略，在AndroidControl上以仅6%的参数实现相当于7B视觉语言模型86–92%的准确率，同时速度提升2.8–4倍。
+
+---
+
+## 83. When the Critic Falls Behind: Co-Evolving Rubrics and Harnesses for Continual Agent Self-Improvement
+
+- **Authors:** Hao Chen, Yukun Yan, Ziyu Han, ..., Maosong Sun, Wanxiang Che
+- **Affiliations:** Harbin Institute of Technology, Tsinghua University
+- **Relevance:** 3.3
+- **PDF:** [https://arxiv.org/pdf/2610.36826v1](https://arxiv.org/pdf/2610.36826v1)
+
+**TLDR:** RuHarness通过持续发现、评估并动态优先排序智能体行为弱点，使评估标准与执行框架协同进化，从而实现更持久的自我改进并提升对未见任务的泛化能力。
+
+---
+
+## 84. ASPEN: Adaptive Semantic Reasoning via Command Persistence Prediction for Efficient Navigation VLAs
+
+- **Authors:** Vieri N. Akustia, Bin Hu
+- **Affiliations:** 
+- **Relevance:** 3.3
+- **PDF:** [https://arxiv.org/pdf/2610.36285v1](https://arxiv.org/pdf/2610.36285v1)
+
+**TLDR:** ASPEN通过预测导航指令是否会持续来选择复用已有命令或重新调用VLA，在保持导航性能基本不变的同时减少9.5%的VLA调用和8.1%的推理时间。
+
+---
+
+## 85. Verifiable Efficiency Limits of Innate LLM Planning in Sliding Puzzles
+
+- **Authors:** Yezhou Cheng, Charles Ling
+- **Affiliations:** 
+- **Relevance:** 3.3
+- **PDF:** [https://arxiv.org/pdf/2610.36415v1](https://arxiv.org/pdf/2610.36415v1)
+
+**TLDR:** 论文提出可验证的无工具长程规划评估框架 \(\mathrm{SPE}=R\times Q\times E\)，通过滑块谜题实验表明：即使模型能完成所有任务，规划越长其动作经济性仍显著下降，而整体成功率、合法协调性与完成效率可能彼此脱钩。
+
+---
+
+## 86. Closed-Loop Aware Planning via Imitation-Free Speed Scoring for End-to-End Autonomous Driving
+
+- **Authors:** Emad Aghajanzadeh, Thomas Schwarzfischer, Marc Kaufeld, ..., Daniel Mueller-Gritschneder, Ulf Schlichtmann
+- **Affiliations:** BMW Group, Technical University of Munich, TU Wien
+- **Relevance:** 3.2
+- **PDF:** [https://arxiv.org/pdf/2610.36079v1](https://arxiv.org/pdf/2610.36079v1)
+
+**TLDR:** CLAP-AD通过模仿学习预测路径、利用物理安全约束对多种候选速度进行多标准评分，实现无需速度条件训练的测试时速度可控规划，并显著提升端到端自动驾驶的速度遵循性与闭环驾驶性能。
+
+---
+
+## 87. Omni-IGN: Onboard Image-Goal Navigation for Drones with Omnidirectional Vision
+
+- **Authors:** Zichen Yan, Rui Huang, Shenao Wang, ..., Nuthasith Gerdpratoom, Lin Zhao
+- **Affiliations:** National University of Singapore
+- **Relevance:** 3.2
+- **PDF:** [https://arxiv.org/pdf/2610.36968v1](https://arxiv.org/pdf/2610.36968v1)
+
+**TLDR:** Omni-IGN 将四鱼眼全景视觉、注意力强化学习导航策略与碰撞安全层结合，实现无人机全机载连续图像目标导航，并在仿真和真实飞行中验证了优异性能及无需微调的零样本迁移能力。
+
+---
+
+## 88. Understanding the limits of latent world models
+
+- **Authors:** Rodrigo Gonzalez Laiz, Steffen Schneider
+- **Affiliations:** 
+- **Relevance:** 3.2
+- **PDF:** [https://arxiv.org/pdf/2610.37588v1](https://arxiv.org/pdf/2610.37588v1)
+
+**TLDR:** 论文提出“忠实潜在世界模型”及潜在 rollout 一致性（LRC）指标来评估模型是否真正学习环境动力学，并发现现有主流模型虽能完成任务，却都未能忠实建模环境状态转移。
+
+---
+
+## 89. Autonomous fixed-wing interception using reinforcement learning
+
+- **Authors:** Daan van Hamersveld, Ewoud Smeur, Iurii Kriachko
+- **Affiliations:** Delft University of Technology
+- **Relevance:** 3.1
+- **PDF:** [https://arxiv.org/pdf/2610.37470v1](https://arxiv.org/pdf/2610.37470v1)
+
+**TLDR:** 研究提出一种基于强化学习的单目视觉端到端固定翼拦截器，并在仿真和真实飞行中成功拦截机动目标，整体性能优于传统制导控制器。
+
+---
+
+## 90. CoHARL: Co-Evolving Agent Policies and Executable Harnesses with Reinforcement Learning
+
+- **Authors:** Jianwen Chen, Peng Xia, Kaide Zeng, ..., Xinyu Ye, Huaxiu Yao
+- **Affiliations:** RIKEN, Cisco, University of North Carolina at Chapel Hill
+- **Relevance:** 3.1
+- **PDF:** [https://arxiv.org/pdf/2610.36469v1](https://arxiv.org/pdf/2610.36469v1)
+
+**TLDR:** CoHARL通过在强化学习过程中让共享LLM策略与多个可执行工具交互框架协同进化，在SWE-rebench上达到27.6%的任务解决率，较仅优化框架提升6.4个百分点。
+
+---
+
+## 91. SG^2SLAM: Spatial Geometry-Informed 3D Gaussian Splatting SLAM for Monocular Outdoor Navigation
+
+- **Authors:** Ziang Guo, Didar Seyidov, Yixiao Zhou, ..., Zufeng Zhang, Dzmitry Tsetserukou
+- **Affiliations:** Chinese Academy of Sciences, The University of Hong Kong, Skolkovo Institute of Science and Technology, Tsinghua University
+- **Relevance:** 3.1
+- **PDF:** [https://arxiv.org/pdf/2610.36312v1](https://arxiv.org/pdf/2610.36312v1)
+
+**TLDR:** SG²SLAM通过流式空间几何先验、射线条件化3D高斯核及空间几何—位姿联合全局优化，提升单目室外导航中的相机跟踪精度、地图几何一致性与尺度稳定性，并在KITTI和Waymo数据集上优于现有逐帧2D–3D关联方法。
+
+---
+
+## 92. Polarity--Time Interaction and Multi-Level Reliability for Event-Based Spacecraft Pose Estimation
+
+- **Authors:** Yonglong Zhang, Zongwu Xie, Yang Liu
+- **Affiliations:** 
+- **Relevance:** 3.1
+- **PDF:** [https://arxiv.org/pdf/2610.36625v1](https://arxiv.org/pdf/2610.36625v1)
+
+**TLDR:** 本文提出一种融合极性—时间交互、几何感知关键点可靠性、事件—CAD细化与质量加权轨迹优化的事件相机航天器位姿估计框架，在SPADES测试集上取得0.0474的综合位姿得分。
+
+---
+
+## 93. UT-HMR: Uncertainty-Guided Temporal Modeling for Robust 3D Human Mesh Recovery
+
+- **Authors:** Zhibo Wang, Sirisha Rambhatla, Yuhao Chen, Maria Koshkina, David Clausi
+- **Affiliations:** University of Waterloo
+- **Relevance:** 3.1
+- **PDF:** [https://arxiv.org/pdf/2610.36203v1](https://arxiv.org/pdf/2610.36203v1)
+
+**TLDR:** UT-HMR通过联合建模跨关节姿态不确定性与时序信息，在无需人体裁剪或外部2D线索的一阶段3D人体网格恢复中提升了歧义场景下的精度、稳定性和不确定性校准效果。
+
+---
+
+## 94. Jaxnasium: Embracing PyTrees For Any-Agent, Cross-Suite Reinforcement Learning
+
+- **Authors:** Koen Ponse, Aske Plaat, Thomas M. Moerland
+- **Affiliations:** 
+- **Relevance:** 3.1
+- **PDF:** [https://arxiv.org/pdf/2610.36075v1](https://arxiv.org/pdf/2610.36075v1)
+
+**TLDR:** Jaxnasium 以 PyTrees 统一表示观测与动作空间，使同一套 JAX 强化学习算法无需改动即可跨越多种环境套件、空间类型及多智能体场景运行，并兼顾易读性、可扩展性与高性能。
+
+---
+
+## 95. Learning Where to Trust: Reliability-Guided Expert Routing and Velocity Gating for 3D Deformable Registration
+
+- **Authors:** Chenyu Guo, Wenjie Dai, Yiqian Chang, ..., Yunfan Wei, Shuhan Qi
+- **Affiliations:** Peng Cheng Laboratory, Harbin Institute of Technology
+- **Relevance:** 3.1
+- **PDF:** [https://arxiv.org/pdf/2610.36672v1](https://arxiv.org/pdf/2610.36672v1)
+
+**TLDR:** ReliMorph通过匹配可靠性与双向一致性反馈，逐体素选择空间专家并调节形变更新强度，从而提升单模态和多模态3D形变配准的解剖对齐效果。
+
+---
+
+## 96. Calibrated for Which Policy? Conformal Uncertainty for Fixed World Models Under Intervention
+
+- **Authors:** Ayush Mittal, Dhruv Gupta
+- **Affiliations:** 
+- **Relevance:** 3.1
+- **PDF:** [https://arxiv.org/pdf/2610.35877v1](https://arxiv.org/pdf/2610.35877v1)
+
+**TLDR:** 论文提出用源—目标分布密度比对固定世界模型进行加权保形校准，使不确定性随部署策略变化而恢复目标覆盖率，并证明分类器的对数损失可控制校准误差，实验证明其在强分布偏移下将覆盖率从55%提升至约91%。
+
+---
+
+## 97. AgentBaton: Efficient Model Collaboration in Agentic Tasks
+
+- **Authors:** Junlong Li, Jindong Jiang, Yonggan Fu, ..., Hao Zhang, Pavlo Molchanov
+- **Affiliations:** 
+- **Relevance:** 3.1
+- **PDF:** [https://arxiv.org/pdf/2610.35959v1](https://arxiv.org/pdf/2610.35959v1)
+
+**TLDR:** AgentBaton提出一种按任务进度在关键阶段将高能力模型交接给高效模型的轻量协作策略，在基本保持甚至提升准确率的同时平均降低65.9%的API成本。
+
+---
+
+## 98. A 2-DOF MultiBody Track Joint for Race Car Optimization
+
+- **Authors:** Srikanth Sivaramakrishnan, Behzad Danaei, Adwait Verulkar, Ryan Trinter
+- **Affiliations:** General Motors
+- **Relevance:** 3.1
+- **PDF:** [https://arxiv.org/pdf/2610.36407v1](https://arxiv.org/pdf/2610.36407v1)
+
+**TLDR:** 该论文提出了一个基于Modelica的二维自由度TrackJoint，用周期性五次样条描述三维赛道表面，使多体赛车模型能够通过同一FMI 3.0 FMU直接进行时域仿真和基于CasADi/IPOPT的最短圈速优化。
+
+---
+
+## 99. When All Rollouts Fail: Policy-Compatible Joint Decoding for Hard-Problem Reasoning
+
+- **Authors:** Zehao Wang, Hanzhu Chen, Runquan Gui, Zhe Wang, Lin Yang
+- **Affiliations:** 
+- **Relevance:** 3.1
+- **PDF:** [https://arxiv.org/pdf/2610.36849v1](https://arxiv.org/pdf/2610.36849v1)
+
+**TLDR:** PICO 通过在有限分布偏移约束下融合专家引导与当前策略进行联合解码，生成既正确又符合策略分布的轨迹，并与在线采样联合训练，从而提升模型在全量 rollout 失败的难题上的推理能力。
+
+---
+
+## 100. ExecDiffuser: Closing the Sample-to-Execution Gap in Diffusion Planning
+
+- **Authors:** Shuo Pei, Bosun Liang, Saihui Zha, ..., Huachun Tan, Yong Wang
+- **Affiliations:** Beijing Institute of Technology, The University of Hong Kong
+- **Relevance:** 3.1
+- **PDF:** [https://arxiv.org/pdf/2610.36837v1](https://arxiv.org/pdf/2610.36837v1)
+
+**TLDR:** ExecDiffuser通过将扩散候选生成、执行感知的轨迹选择与闭环重规划统一起来，弥合“样本到执行”鸿沟，在多个自动驾驶基准上显著提升最终闭环性能。
 
 ---
 
